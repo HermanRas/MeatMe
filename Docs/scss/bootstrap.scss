@@ -5,6 +5,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ $theme-colors: (
+// set theme colors 
+  "primary": #9FA659,
+  "primary-dark": #797641,
+  "secondary" : #B7B094,
+  "secondary-dark" : #B7B094,
+  "dark": #4B4C2C,
+
+// //   set Base Action Colors
+//   "danger": #ff4136,
+//   "info" : #00ade2,
+//   "success" : #3ab800
+);
+
+
 @import "functions";
 @import "variables";
 @import "mixins";

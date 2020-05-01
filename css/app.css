@@ -1,0 +1,12 @@
+*{
+    border-style: box;
+    padding: 0;
+    border: 0;
+}
+
+.main-ico{
+    width: 8rem;
+}
+#carouselExampleControls > div > div > div > h5,#carouselExampleControls > div > div > div > p{
+      text-shadow: 2px 2px 8px #000;
+}
