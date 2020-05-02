@@ -8,6 +8,10 @@ body{
     overflow-x: hidden !important ;
 }
 
+#carouselExampleControls > div > div > div > h5,#carouselExampleControls > div > div > div > p{
+      text-shadow: 2px 2px 8px #000;
+}
+
 .main-ico{
     position: relative;   
 }
@@ -20,6 +24,7 @@ body{
     top: 0px;
     text-shadow: 2px 2px 8px #000;
 }
-#carouselExampleControls > div > div > div > h5,#carouselExampleControls > div > div > div > p{
-      text-shadow: 2px 2px 8px #000;
+
+.buy-item{
+    width: 4rem;
 }
