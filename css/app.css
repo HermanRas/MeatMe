@@ -5,20 +5,21 @@
 }
 
 body{
-    overflow: hidden !important ;
+    overflow-x: hidden !important ;
 }
 
 .main-ico{
-    width: 8rem;
+    position: relative;   
+}
+
+.main-ico-text{
+    position: relative;
+    color: var(--secondary-dark);
+    font-size: 2rem;
+    font-weight: bold;
+    top: 0px;
+    text-shadow: 2px 2px 8px #000;
 }
 #carouselExampleControls > div > div > div > h5,#carouselExampleControls > div > div > div > p{
       text-shadow: 2px 2px 8px #000;
-}
-
-.pageOut{
-    overflow: hidden;
-    max-width: 1px;
-    max-height: 1px;
-    padding: 0;
-    margin: 0;
 }
