@@ -28,3 +28,31 @@ body{
 .buy-item{
     width: 4rem;
 }
+
+.search{
+    max-width: 350px;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .search{
+        max-width: 80%;
+    }
+    
+}
+
+.cart{
+    position: relative;
+}
+
+.cart-icon{
+    position: relative;
+    font-size: large;
+}
+
+.cart-notify{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    font-size: x-small;
+}
