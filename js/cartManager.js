@@ -22,7 +22,8 @@ function addCart(newItem) {
         if (currentCart.length === 0) {
             // brand new cart
             let item = [{ 'name': name, 'pp': pp, 'qnt': qnt }];
-            cart = item;
+            currentCart.push(item);
+            cart = currentCart;
         } else {
             // active cart + new Item
             // newitem
