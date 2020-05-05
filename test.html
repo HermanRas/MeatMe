@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestLocal Storage</title>
+</head>
+
+<body>
+
+    name: <input type="text" name="name" id="name" value="someMeatz"><br>
+    PP: <input type="number" name="pp" id="pp" value="5"><br>
+    Qnt: <input type="text" name="qnt" id="qnt" value="500"><br>
+    <button type="button" onclick="addCart();">Add</button>
+
+    <br><br><br>
+    <div id="log"></div>
+    <script>
+        function addCart() {
+            // load current cart if set
+            if (localStorage.getItem('cart') === null) {
+                window.localStorage.setItem('cart', JSON.stringify([]));
+            }
+
+            //get data from stor
+            let currentCart = JSON.parse(localStorage.getItem("cart"));
+
+            //get data from from
+            const name = document.getElementById('name').value;
+            const pp = document.getElementById('pp').value;
+            const qnt = document.getElementById('qnt').value;
+            let cart = new Array();
+
+            console.log('index', currentCart.length);
+            if (currentCart.length === 0) {
+                // brand new cart
+                let item = [{ 'name': name, 'pp': pp, 'qnt': qnt }];
+                cart = item;
+            } else {
+                // active cart + new Item
+                // newitem
+                let item = [{ 'name': name, 'pp': pp, 'qnt': qnt }];
+                currentCart.push(item);
+                cart = currentCart;
+            }
+            window.localStorage.setItem('cart', JSON.stringify(cart));
+            document.getElementById('log').innerHTML = JSON.stringify(cart);
+        }
+
+    </script>
+</body>
+
+</html>

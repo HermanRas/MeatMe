@@ -72,8 +72,9 @@
             </div>
         </div>
         <div class="cart">
-            <a class="btn  btn-outline-secondary text-white">
-                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify">5</span>
+            <a class="btn  btn-outline-secondary text-white" href="cart.html">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
             </a>
         </div>
     </nav>
@@ -194,6 +195,11 @@
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- end of Bootstrap JS -->
+
+    <!-- Page Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/cartManager.js"></script>
+    <script src="js/pageScripts.js"></script>
 
     <!-- Page Migration -->
     <script src="https://unpkg.com/@barba/core"></script>
