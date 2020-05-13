@@ -1,10 +1,10 @@
 <!-- PageStart -->
 <main data-barba="container" data-barba-namespace="home">
     <div class="container mt-3">
-        <h1 class="bg-secondary-dark rounded p-2">Other</h1>
+        <h1 class="bg-secondary-dark rounded p-2">Venison</h1>
         <div class="text-center">
-            <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + OTHER"
-                alt="other">
+            <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + VENISON"
+                alt="venison">
             <p class="small text-danger">Packing: 0 - one big Pack <br>
                 Packing: 1-9 packed per person </p>
         </div>

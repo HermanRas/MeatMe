@@ -15,7 +15,7 @@
 
                     <div class="row">
                         <div class="col-12 col-md-3">
-                            <img style="width: 3rem;" class="rounded" src="img/beef/nek.jpg" alt="nek">
+                            <img style="width: 3rem;" class="rounded" src="https://via.placeholder.com/400x250.png?text=400x250 + NEK" alt="nek">
                             <h5 class="ml-1 d-inline text-uppercase">NEK</h5>
                         </div>
                         <div class="col-12 col-md-3">

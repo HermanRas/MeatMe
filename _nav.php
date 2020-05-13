@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.php">
-        <img src="img/icon.jpg" width="30" height="30" class="d-inline-block align-top rounded">
-        MeatMe
+        <img src="https://via.placeholder.com/1024x1204.png?text=1024x1024 + LOGO" width="30" height="30"
+            class="d-inline-block align-top rounded">
+        QWEENS ONLINE DELI
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

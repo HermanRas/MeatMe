@@ -3,7 +3,8 @@
     <div class="container mt-3">
         <h1 class="bg-secondary-dark rounded p-2">Poultry</h1>
         <div class="text-center">
-            <img class="img-fluid rounded " src="img/poultry.png" alt="poultry">
+            <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + POULTRY"
+                alt="poultry">
             <p class="small text-danger">Packing: 0 - one big Pack <br>
                 Packing: 1-9 packed per person </p>
         </div>
@@ -12,7 +13,7 @@
         <form action="">
             <!-- NEK START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/nek.jpg" alt="nek">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x250.png?text=400x250 + NEK" alt="nek">
                 <div class="media-body">
                     <h5 class="mt-0">Nek</h5>
                     <div class="form-row align-items-center">
@@ -50,7 +51,8 @@
 
             <!-- BRISKET START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/brisket.png" alt="flank">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + BRISKET"
+                    alt="flank">
                 <div class="media-body">
                     <h5 class="mt-0">Brisket</h5>
                     <div class="form-row align-items-center">
@@ -88,7 +90,8 @@
 
             <!-- FLANK START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/flank.jpg" alt="flank">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + FLANK"
+                    alt="flank">
                 <div class="media-body">
                     <h5 class="mt-0">Flank</h5>
                     <div class="form-row align-items-center">
@@ -126,7 +129,7 @@
 
             <!-- LION START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/Loin.jpg" alt="lion">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + Loin" alt="lion">
                 <div class="media-body">
                     <h5 class="mt-0">Lion</h5>
                     <div class="form-row align-items-center">
@@ -164,7 +167,8 @@
 
             <!-- PLATE START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/plate.jpg" alt="Plate">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + PLATE"
+                    alt="Plate">
                 <div class="media-body">
                     <h5 class="mt-0">Plate</h5>
                     <div class="form-row align-items-center">
@@ -202,7 +206,7 @@
 
             <!-- RIBS START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/ribs.jpg" alt="Ribs">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + RIBS" alt="Ribs">
                 <div class="media-body">
                     <h5 class="mt-0">Ribs</h5>
                     <div class="form-row align-items-center">
@@ -240,7 +244,8 @@
 
             <!-- ROUND START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/round.jpg" alt="round">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + ROUND"
+                    alt="round">
                 <div class="media-body">
                     <h5 class="mt-0">Round</h5>
                     <div class="form-row align-items-center">
@@ -278,7 +283,8 @@
 
             <!-- SERLOIN START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/serloin.jpg" alt="serloin">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + SERLOIN"
+                    alt="serloin">
                 <div class="media-body">
                     <h5 class="mt-0">Serloin</h5>
                     <div class="form-row align-items-center">
@@ -316,7 +322,8 @@
 
             <!-- SHANK START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="img/beef/Shank.jpg" alt="Shank">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + SHANK"
+                    alt="Shank">
                 <div class="media-body">
                     <h5 class="mt-0">Shank</h5>
                     <div class="form-row align-items-center">
