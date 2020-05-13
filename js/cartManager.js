@@ -1,7 +1,7 @@
 function addCart(newItem) {
 
     // check if form valid
-    if (!document.getElementById(newItem.id + 'Pp').checkValidity()) {
+    if (!document.getElementById(newItem.id + 'Qty').checkValidity() || !document.getElementById(newItem.id + 'Portion').checkValidity()) {
         document.getElementById(newItem.id + 'Save').click();
     } else {
 
@@ -15,8 +15,8 @@ function addCart(newItem) {
 
         //get data from from
         const name = newItem.id;
-        const pp = document.getElementById(newItem.id + 'Pp').value;
-        const qnt = document.getElementById(newItem.id + 'Grams').value;
+        const pp = document.getElementById(newItem.id + 'Portion').value;
+        const qnt = document.getElementById(newItem.id + 'Qty').value;
         let cart = new Array();
 
         if (currentCart.length === 0) {
@@ -34,8 +34,8 @@ function addCart(newItem) {
         window.localStorage.setItem('cart', JSON.stringify(cart));
 
         // cleanup form
-        document.getElementById(newItem.id + 'Pp').value = '';
-        document.getElementById(newItem.id + 'Grams').value = '';
+        document.getElementById(newItem.id + 'Portion').value = '';
+        document.getElementById(newItem.id + 'Qty').value = '';
         Swal.fire({
             icon: 'success',
             title: 'Your cart has been Updated!',

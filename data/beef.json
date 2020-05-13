@@ -1,0 +1,262 @@
+{
+    "items": [
+        {
+            "name": "FILLET",
+            "IMG": "fillet.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1000": "1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "RUMP STEAK",
+            "IMG": "rump.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "400": "2 x 200g"
+                },
+                {
+                    "600": "2 x 300g"
+                },
+                {
+                    "1000": "2 x 500g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "SIRLOIN STEAK",
+            "IMG": "SIRLOIN.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "400": "2 x 200g"
+                },
+                {
+                    "600": "2 x 300g"
+                },
+                {
+                    "1000": "2 x 500g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "RIBEYE STEAK",
+            "IMG": "RIBEYE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "400": "2 x 200g"
+                },
+                {
+                    "600": "2 x 300g"
+                },
+                {
+                    "1000": "2 x 500g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "T-BONE STEAK",
+            "IMG": "T-BONE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "700": "2 x 350g"
+                },
+                {
+                    "1000": "2 x 500g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "CLUB STEAK",
+            "IMG": "CLUB.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "400": "2 x 200g"
+                },
+                {
+                    "600": "2 x 300g"
+                },
+                {
+                    "1000": "2 x 500g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "PREGO STEAK",
+            "IMG": "PREGO.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "600": "6 x 100g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "BEEF BOEREWORS",
+            "IMG": "BOEREWORS.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "MINCE",
+            "IMG": "MINCE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "OXTAIL",
+            "IMG": "OXTAIL.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "STIRFRY",
+            "IMG": "STIRFRY.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "STEWING BEEF",
+            "IMG": "STEWING.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "BEEF PATTIES",
+            "IMG": "PATTIES.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "200": "6 Patties"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "BEEF TONGUE",
+            "IMG": "TONGUE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "600": "1 TONGUE"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "LIVER",
+            "IMG": "LIVER.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "MARROW BONES",
+            "IMG": "BONES.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "SOSATIES",
+            "IMG": "SOSATIES.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "RIBS",
+            "IMG": "RIBS.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        }
+    ]
+}

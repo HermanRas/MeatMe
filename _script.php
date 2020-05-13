@@ -16,8 +16,8 @@
     <script src="js/cartManager.js"></script>
     <script src="js/pageScripts.js"></script>
 
-    <!-- Page Migration -->
+    <!-- Page Migration
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> -->
