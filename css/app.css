@@ -56,3 +56,8 @@ body{
     left: 55%;
     font-size: x-small;
 }
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}

@@ -1,131 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MeatMe</title>
-
-    <!-- Chrome/android APP settings -->
-    <meta name="theme-color" content="#797641">
-    <link rel="icon" href="img/icon.jpg" sizes="192x192">
-    <!-- end of Chrome/Android App Settings  -->
-
-    <!-- Bootstrap // you can use hosted CDN here-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
-    <!-- end of bootstrap -->
-
-    <!-- font-awesome 5.10.2 // not needed for theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!-- end of font-awesome  -->
-
-
-    <style>
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-    </style>
-</head>
-
-<body data-barba="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/icon.jpg" width="30" height="30" class="d-inline-block align-top rounded">
-            MeatMe
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="specials.html">Specials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Orders
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Order History</a>
-                        <a class="dropdown-item" href="#">Active Orders</a>
-                    </div>
-                </li>
-            </ul>
+<!-- PageStart -->
+<main data-barba="container" data-barba-namespace="home">
+    <div class="container mt-3">
+        <h1 class="bg-secondary-dark rounded p-2">Other</h1>
+        <div class="text-center">
+            <img class="img-fluid rounded " src="img/other.png" alt="other">
+            <p class="small text-danger">Packing: 0 - one big Pack <br>
+                Packing: 1-9 packed per person </p>
         </div>
-
-        <div class="search form-inline input-group my-2 my-lg-0 float-right">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
-                aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-        <div class="cart">
-            <a class="btn  btn-outline-secondary text-white" href="cart.html">
-                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
-                    id="cartCount"></span>
-            </a>
-        </div>
-    </nav>
-
-    <!-- PageStart -->
-    <main data-barba="container" data-barba-namespace="home">
-        <div class="container mt-3">
-            <h1 class="bg-secondary-dark rounded p-2">BEEF</h1>
-            <div class="text-center">
-                <img class="img-fluid rounded " src="img/beef.png" alt="beef">
-                <p class="small text-danger">Packing: 0 - one big Pack <br>
-                    Packing: 1-9 packed per person </p>
-            </div>
-            <br>
-            <hr>
+        <br>
+        <hr>
+        <form action="">
             <!-- NEK START-->
-            <form id="nekFrom">
-                <div class="media">
-                    <img class="mr-3 buy-item" src="img/beef/nek.jpg" alt="nek">
-                    <div class="media-body">
-                        <h5 class="mt-0">Nek</h5>
-                        <div class="form-row align-items-center">
-                            <div class="col-auto">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">Grams</div>
-                                    </div>
-                                    <input type="number" class="form-control" id="nekGrams" placeholder="1000" required>
+            <div class="media">
+                <img class="mr-3 buy-item" src="img/beef/nek.jpg" alt="nek">
+                <div class="media-body">
+                    <h5 class="mt-0">Nek</h5>
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Grams</div>
                                 </div>
+                                <input type="number" class="form-control" id="gram1" placeholder="1000">
                             </div>
-                            <div class="col-auto">
-                                <label class="sr-only" for="pp">Per person</label>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">Per Person</div>
-                                    </div>
-                                    <input type="number" class="form-control" id="nekPp" placeholder="0" required>
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="pp">Per person</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Per Person</div>
                                 </div>
+                                <input type="number" class="form-control" id="pp1" placeholder="0">
                             </div>
-                            <div class="col-auto">
-                                <div class="mb-2">
-                                    <input class="btn btn-secondary mt-0 form-control" type="button" id="nek"
-                                        value="Add" onclick="addCart(this);">
-                                    <input style="display: none;" type="submit" id="nekSave">
-                                </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cart1">
+                                <label class="form-check-label" for="cart">
+                                    Add to Cart
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
             <!-- NEK END-->
+
             <hr>
 
             <!-- BRISKET START-->
@@ -430,42 +350,8 @@
             </div>
             <!-- SHANK END-->
 
-
-            <br>
-            <hr>
-        </div>
-    </main>
-    <div style="min-height:100px" class="text-center rounded bg-dark">
-        <a class="btn btn-dark"><i class="text-white display-4 fab fa-facebook-square"></i></a>
-        <a class="btn btn-dark"><i class="text-white display-4 fab fa-whatsapp-square"></i></a>
-        <a class="btn btn-dark"><i class="text-white display-4 fab fa-pinterest-square"></i></a>
-        <a class="btn btn-dark"><i class="text-white display-4 fab fa-twitter-square"></i></a>
-        <a class="btn btn-dark"><i class="text-white display-4 fab fa-linkedin"></i></a>
+        </form>
+        <br>
+        <hr>
     </div>
-
-    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- END of jQuery -->
-
-    <!-- Start of Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- end of Bootstrap JS -->
-
-    <!-- Page Script -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="js/cartManager.js"></script>
-    <script>updateCartCountOnMenu();</script>
-
-    <!-- Page Migration -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="js/app.js"></script>
-</body>
-
-</html>
+</main>
