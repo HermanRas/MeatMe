@@ -37,7 +37,8 @@ function addCart(newItem) {
         window.localStorage.setItem('cart', JSON.stringify(cart));
 
         // cleanup form
-        document.getElementById(newItem.id + 'Portion').value = '';
+        // document.getElementById(newItem.id + 'Portion').value = 'Choose...';
+        document.getElementById(newItem.id + 'Portion').getElementsByTagName('option')[0].selected = 'selected'
         document.getElementById(newItem.id + 'Qty').value = '';
         Swal.fire({
             icon: 'success',

@@ -18,6 +18,8 @@
             </ul>
         </div>
         <br>
+        <button type="button" class="btn btn-primary float-right"> Check Out </button>
+        <br>
         <hr>
     </div>
 </main>

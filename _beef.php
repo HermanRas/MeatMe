@@ -44,7 +44,7 @@
                                             for="<?php echo $item["name"]; ?>Portion">Portion Size</label>
                                     </div>
                                     <select class="custom-select" id="<?php echo $item["name"]; ?>Portion" required>
-                                        <option selected>Choose...</option>
+                                        <option value="">Choose...</option>
                                         <?php
                                         // loop thru Portions
                                         foreach ($item["Portion Size"] as $Portion) {
