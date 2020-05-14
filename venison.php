@@ -12,7 +12,7 @@
 
     <!-- PageStart -->
     <main data-barba="container" data-barba-namespace="home">
-        <?php include_once('_beef.php'); ?>
+        <?php include_once('_venison.php'); ?>
     </main>
     <!-- Include footer -->
     <?php include_once('_footer.php'); ?>

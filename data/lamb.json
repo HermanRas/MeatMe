@@ -1,24 +1,12 @@
 {
     "items": [
         {
-            "name": "PORK BELLY",
-            "IMG": "PorkBelly.png",
+            "name": "WHOLE LAMB",
+            "IMG": "Whole.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
-                    "1000": "1kg"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "BEST END CHOPS",
-            "IMG": "BestChops.jpg",
-            "Price p/kg": 500,
-            "Portion Size": [
-                {
-                    "1200": "6 x Chops"
+                    "21000": "WHOLE LAMB"
                 }
             ],
             "minQTY": 1,
@@ -37,8 +25,20 @@
             "maxQTY": 1000
         },
         {
-            "name": "BOUD CHOPS",
-            "IMG": "BoudChops.jpg",
+            "name": "LAMB SHANK",
+            "IMG": "LAMB-SHANK.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "600": "2 per Pack"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "LAMB BRAAI CHOPS",
+            "IMG": "LAMB-BRAAI-CHOPS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -49,36 +49,54 @@
             "maxQTY": 1000
         },
         {
-            "name": "RACHERS",
-            "IMG": "RACHERS.jpg",
-            "Price p/kg": 500,
-            "Portion Size": [
-                {
-                    "1200": "6 x Chops"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "PORK ROAST",
-            "IMG": "PorkROAST.jpg",
-            "Price p/kg": 500,
-            "Portion Size": [
-                {
-                    "1200": "1 x Roast"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "SPARE RIBS",
-            "IMG": "SPARE_RIBS.jpg",
+            "name": "LAMB RIB",
+            "IMG": "LAMB-RIB.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
                     "600": "600g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "LEG OF LAMB",
+            "IMG": "LEG-OF-LAMB.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "800": "800g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "POTJIE",
+            "IMG": "POTJIE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "LAMB NECK",
+            "IMG": "LAMB-NECK.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
                 }
             ],
             "minQTY": 1,

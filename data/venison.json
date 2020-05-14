@@ -1,0 +1,76 @@
+{
+    "items": [
+        {
+            "name": "BOEREWORS",
+            "IMG": "BOEREWORS.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "CURRY KEBABS",
+            "IMG": "CURRY-KEBABS.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "STEWING",
+            "IMG": "STEWING.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "POTJIE",
+            "IMG": "POTJIE.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "PATTIES",
+            "IMG": "PATTIES.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1200": "6 Patties"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        }
+    ]
+}
