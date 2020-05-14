@@ -18,7 +18,9 @@
     <?php include_once('_footer.php'); ?>
     <!-- include Scipts -->
     <?php include_once('_script.php') ?>
-
+    <script>
+    pageCart();
+    </script>
 </body>
 
 </html>

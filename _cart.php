@@ -9,40 +9,15 @@
                 </h2>
             </div>
             <ul id="cartData" class="list-group list-group-flush">
-
                 <!-- Per Item -->
-                <li class="list-group-item">
-
-                    <div class="row">
-                        <div class="col-12 col-md-3">
-                            <img style="width: 3rem;" class="rounded" src="https://via.placeholder.com/400x250.png?text=400x250 + NEK" alt="nek">
-                            <h5 class="ml-1 d-inline text-uppercase">NEK</h5>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            700 <strong>Grams</strong>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            Packed for: 5 <strong>People</strong>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <button type="button" class="btn btn-outline-secondary mt-1 float-right"> X
-                            </button>
-                        </div>
-                    </div>
-
-                </li>
+                <!-- 
+                    /////////////////////////////////////////////////////////////////////////////////
+                    //  Render Cart Page cartManager.js
+                    /////////////////////////////////////////////////////////////////////////////////
+                    -->
             </ul>
         </div>
-        <!-- added load script for direct access -->
-        <script src="js/pageScripts.js"></script>
-        <script>pageCart();</script>
-        <!-- not applicable if loaded via page load ^^ -->
         <br>
         <hr>
     </div>
 </main>
-
-<!-- Page Script -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script src="js/cartManager.js"></script>
-<script>updateCartCountOnMenu();</script>

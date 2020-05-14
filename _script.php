@@ -14,7 +14,6 @@
     <!-- Page Script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="js/cartManager.js"></script>
-    <script src="js/pageScripts.js"></script>
 
     <!-- Page Migration
     <script src="https://unpkg.com/@barba/core"></script>

@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////////////////////////////////////
+//  Check if Item being added to cart is valid
+/////////////////////////////////////////////////////////////////////////////////
 function addCart(newItem) {
 
     // check if form valid
@@ -46,6 +49,9 @@ function addCart(newItem) {
     }
 }
 
+/////////////////////////////////////////////////////////////////////////////////
+//  Update Cart Icon On Menu
+/////////////////////////////////////////////////////////////////////////////////
 function updateCartCountOnMenu() {
     // load current cart if set
     if (localStorage.getItem('cart') === null) {
@@ -61,6 +67,48 @@ function updateCartCountOnMenu() {
         counter = currentCart.length;
     }
     document.getElementById('cartCount').innerText = counter;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//  Render Cart Page
+/////////////////////////////////////////////////////////////////////////////////
+function pageCart() {
+    // load current cart if set
+    if (localStorage.getItem('cart') === null) {
+        window.localStorage.setItem('cart', JSON.stringify([]));
+    }
+
+    //get data from stor
+    let currentCart = JSON.parse(localStorage.getItem("cart"));
+    //run thru the items in this cart
+    let i = 0;
+    currentCart.forEach(cartItem => {
+        const itemName = cartItem[0].name;
+        const itemPp = cartItem[0].pp;
+        const itemGrams = cartItem[0].qnt;
+        const html = document.getElementById('cartData').innerHTML;
+        const listItem = `
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <img style="width: 3rem;" class="rounded" src="https://via.placeholder.com/400x250.png?text=400x250 + ` + itemName + `" alt="nek">
+                                <h5 class="ml-1 d-inline text-uppercase">` + itemName + `</h5>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <strong>Grams: </strong>` + itemPp + `
+                            </div>
+                            <div class="col-12 col-md-3">
+                               <strong>Quantity: </strong> ` + itemGrams + `
+                            </div>
+                            <div class="col-12 col-md-1">
+                                <button type="button" class="btn btn-outline-secondary mt-1 float-right" id="`+ i + `" > X </button>
+                            </div>
+                        </div>
+                    </li>`;
+        document.getElementById('cartData').innerHTML = html + listItem;
+        i++;
+    });
 }
 
 // if cart on page update
