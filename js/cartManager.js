@@ -69,6 +69,28 @@ function updateCartCountOnMenu() {
     document.getElementById('cartCount').innerText = counter;
 }
 
+/////////////////////////////////////////////////////////////////////////////////
+//  Remove Item From Cart
+/////////////////////////////////////////////////////////////////////////////////
+function remoteItemCart(item) {
+    // load current cart if set
+    if (localStorage.getItem('cart') === null) {
+        window.localStorage.setItem('cart', JSON.stringify([]));
+    }
+
+    //get data from stor
+    let currentCart = JSON.parse(localStorage.getItem("cart"));
+
+    // remove item
+    currentCart.splice(item.id, 1);
+
+    // save data
+    window.localStorage.setItem('cart', JSON.stringify(currentCart));
+
+    updateCartCountOnMenu();
+    pageCart();
+}
+
 
 /////////////////////////////////////////////////////////////////////////////////
 //  Render Cart Page
@@ -81,8 +103,23 @@ function pageCart() {
 
     //get data from stor
     let currentCart = JSON.parse(localStorage.getItem("cart"));
+
+    // Clear page
+    document.getElementById('cartData').innerHTML = '';
+
     //run thru the items in this cart
     let i = 0;
+    if (currentCart.length === 0) {
+        document.getElementById('cartData').innerHTML = `
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-12">
+                        <p> no items in your cart ! </p>
+                    </div>
+                </div>
+            </li>
+        `;
+    }
     currentCart.forEach(cartItem => {
         const itemName = cartItem[0].name;
         const itemPp = cartItem[0].pp;
@@ -102,7 +139,7 @@ function pageCart() {
                                <strong>Quantity: </strong> ` + itemGrams + `
                             </div>
                             <div class="col-12 col-md-1">
-                                <button type="button" class="btn btn-outline-secondary mt-1 float-right" id="`+ i + `" > X </button>
+                                <button type="button" class="btn btn-outline-secondary mt-1 float-right" id="`+ i + `" onclick="remoteItemCart(this);"> X </button>
                             </div>
                         </div>
                     </li>`;
