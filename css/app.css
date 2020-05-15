@@ -30,19 +30,33 @@ body{
 }
 
 .search{
+    position: absolute;
+    right: 0;
     max-width: 350px;
+    padding-right: 5px;
+}
+
+.nav-img {
+    max-width: 50px !important;
+}
+
+.cart{
+    position: relative;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
     .search{
+        position: relative;
         max-width: 80%;
     }
     
-}
+    .navbar-brand, .nav-img {
+        max-width: 0px !important;
+        display: none !important;
+    }
 
-.cart{
-    position: relative;
+    
 }
 
 .cart-icon{

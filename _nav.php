@@ -1,8 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1">
+    <!-- ICON  -->
     <a class="navbar-brand" href="index.php">
-        <img src="img/icon.jpg" width="30" height="30" class="d-inline-block align-top rounded">
-        QWEENS ONLINE DELI
+        <img src="img/icon.jpg" class="d-inline-block nav-img align-top rounded">
     </a>
+
+    <!-- SEARCH -->
+    <div class="search form-inline input-group my-2 my-lg-0">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="cart">
+            <a class="btn  btn-outline-secondary text-white" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- MOBILE BURGER BUTTON -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,19 +46,5 @@
                 </div>
             </li>
         </ul>
-    </div>
-
-    <div class="search form-inline input-group my-2 my-lg-0 float-right">
-        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
-            aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-        </div>
-    </div>
-    <div class="cart">
-        <a class="btn  btn-outline-secondary text-white" href="cart.php">
-            <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
-                id="cartCount"></span>
-        </a>
     </div>
 </nav>
