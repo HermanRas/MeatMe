@@ -43,7 +43,7 @@
                 </div>
             </div>
             <hr>
-            <h1 class="bg-secondary-dark rounded p-2">QWEENS ONLINE DELI - Online Shop</h1>
+            <h1 class="bg-secondary-dark rounded p-2">QWEENS ONLINE DELI</h1>
             <div class="row">
                 <div class="col-6 col-md-4 text-center">
                     <a href="beef.php" class="btn btn-outline-secondary">
@@ -85,15 +85,15 @@
                         <img src="https://via.placeholder.com/400x250.png?text=400x250 + BILTONG" id="other"
                             class="img-fluid rounded main-ico">
                     </a>
-                    <label class="main-ico-text" for="other">BILTONG</label>
+                    <label class="main-ico-text" for="other">BILTONG & DRY WORS</label>
                 </div>
-                <!-- <div class="col-6 col-md-4 text-center">
+                <div class="col-6 col-md-4 text-center">
                     <a href="other.php" class="btn btn-outline-secondary">
                         <img src="https://via.placeholder.com/400x250.png?text=400x250 + OTHER" id="other"
                             class="img-fluid rounded main-ico">
                     </a>
                     <label class="main-ico-text" for="other">OTHER</label>
-                </div> -->
+                </div>
             </div>
 
             <br>

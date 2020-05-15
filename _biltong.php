@@ -1,7 +1,7 @@
 <!-- PageStart -->
 <main data-barba="container" data-barba-namespace="home">
     <div class="container mt-3">
-        <h1 class="bg-secondary-dark rounded p-2">BILTONG</h1>
+        <h1 class="bg-secondary-dark rounded p-2">BILTONG & DROëWORS</h1>
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + BILTONG"
                 alt="BILTONG">

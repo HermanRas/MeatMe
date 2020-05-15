@@ -5,7 +5,7 @@
 
 <!-- Chrome/android APP settings -->
 <meta name="theme-color" content="#797641">
-<link rel="icon" href="https://via.placeholder.com/1024x1024.png?text=1024x1024 + LOGO" sizes="192x192">
+<link rel="icon" href="img/icon.jpg" sizes="192x192">
 <!-- end of Chrome/Android App Settings  -->
 
 <!-- Bootstrap // you can use hosted CDN here-->
