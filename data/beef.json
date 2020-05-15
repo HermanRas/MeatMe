@@ -2,7 +2,7 @@
     "items": [
         {
             "name": "FILLET",
-            "IMG": "fillet.png",
+            "IMG": "img/beef/BEEFFILLET.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -14,7 +14,7 @@
         },
         {
             "name": "RUMP STEAK",
-            "IMG": "rump.jpg",
+            "IMG": "img/beef/BEEFRUMP.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -32,7 +32,7 @@
         },
         {
             "name": "SIRLOIN STEAK",
-            "IMG": "SIRLOIN.jpg",
+            "IMG": "img/beef/SERLOIN.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -50,7 +50,7 @@
         },
         {
             "name": "RIBEYE STEAK",
-            "IMG": "RIBEYE.jpg",
+            "IMG": "img/beef/RIBEYE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -68,7 +68,7 @@
         },
         {
             "name": "T-BONE STEAK",
-            "IMG": "T-BONE.jpg",
+            "IMG": "img/beef/t-bone.bmp",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -83,7 +83,7 @@
         },
         {
             "name": "CLUB STEAK",
-            "IMG": "CLUB.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -101,7 +101,7 @@
         },
         {
             "name": "PREGO STEAK",
-            "IMG": "PREGO.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -113,7 +113,7 @@
         },
         {
             "name": "BEEF BOEREWORS",
-            "IMG": "BOEREWORS.jpg",
+            "IMG": "img/beef/BOEREWORS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -128,7 +128,7 @@
         },
         {
             "name": "MINCE",
-            "IMG": "MINCE.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -143,7 +143,7 @@
         },
         {
             "name": "OXTAIL",
-            "IMG": "OXTAIL.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -155,7 +155,7 @@
         },
         {
             "name": "STIRFRY",
-            "IMG": "STIRFRY.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -170,7 +170,7 @@
         },
         {
             "name": "STEWING BEEF",
-            "IMG": "STEWING.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -185,7 +185,7 @@
         },
         {
             "name": "BEEF PATTIES",
-            "IMG": "PATTIES.jpg",
+            "IMG": "img/beef/BEEFPATTIE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -197,7 +197,7 @@
         },
         {
             "name": "BEEF TONGUE",
-            "IMG": "TONGUE.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -209,7 +209,7 @@
         },
         {
             "name": "LIVER",
-            "IMG": "LIVER.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -224,7 +224,7 @@
         },
         {
             "name": "MARROW BONES",
-            "IMG": "BONES.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -236,7 +236,7 @@
         },
         {
             "name": "SOSATIES",
-            "IMG": "SOSATIES.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -248,7 +248,7 @@
         },
         {
             "name": "RIBS",
-            "IMG": "RIBS.jpg",
+            "IMG": "img/beef/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
