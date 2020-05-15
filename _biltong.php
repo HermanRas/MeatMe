@@ -5,8 +5,7 @@
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + BILTONG"
                 alt="BILTONG">
-            <p class="small text-danger">Packing: 0 - one big Pack <br>
-                Packing: 1-9 packed per person </p>
+
         </div>
         <br>
         <hr>

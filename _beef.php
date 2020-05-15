@@ -1,14 +1,21 @@
 <!-- PageStart -->
 <main data-barba="container" data-barba-namespace="home">
-    <div class="container mt-3">
+    <div class="container rounded mt-3">
         <h1 class="bg-secondary-dark rounded p-2">BEEF</h1>
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + BEEF"
                 alt="beef">
-            <p class="small text-danger">Packing: 0 - one big Pack <br>
-                Packing: 1-9 packed per person </p>
+
         </div>
         <br>
+        <div class="text-center">
+            <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="pork.php">PORK &gt;</a>
+        </div>
         <hr>
         <?php
         // Load Items
@@ -83,6 +90,19 @@
         }
 
         ?>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary">Main Pri</button>
+            <button type="button" class="btn btn-secondary">Main Sec</button>
+            <button type="button" class="btn btn-dark">Main Dark</button>
+            <br>
+            <hr>
+            <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="pork.php">PORK &gt;</a>
+        </div>
         <br>
         <hr>
     </div>
