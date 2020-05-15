@@ -18,22 +18,18 @@ function addCart(newItem) {
 
         //get data from from
         const name = newItem.id;
-        const pp = document.getElementById(newItem.id + 'Portion').value;
         const qnt = document.getElementById(newItem.id + 'Qty').value;
-        let cart = new Array();
+        const portion = document.getElementById(newItem.id + 'Portion');
+        const portionValue = portion.value;
+        const portionText = portion.options[portion.selectedIndex].text;
 
-        if (currentCart.length === 0) {
-            // brand new cart
-            let item = [{ 'name': name, 'pp': pp, 'qnt': qnt }];
-            currentCart.push(item);
-            cart = currentCart;
-        } else {
-            // active cart + new Item
-            // newitem
-            let item = [{ 'name': name, 'pp': pp, 'qnt': qnt }];
-            currentCart.push(item);
-            cart = currentCart;
-        }
+        // update data
+        let cart = new Array();
+        let item = [{ 'name': name, 'portionValue': portionValue, 'portionText': portionText, 'qnt': qnt }];
+        currentCart.push(item);
+        cart = currentCart;
+
+        // save data
         window.localStorage.setItem('cart', JSON.stringify(cart));
 
         // cleanup form
@@ -123,7 +119,7 @@ function pageCart() {
     }
     currentCart.forEach(cartItem => {
         const itemName = cartItem[0].name;
-        const itemPp = cartItem[0].pp;
+        const itemPortion = cartItem[0].portionText;
         const itemGrams = cartItem[0].qnt;
         const html = document.getElementById('cartData').innerHTML;
         const listItem = `
@@ -134,7 +130,7 @@ function pageCart() {
                                 <h5 class="ml-1 d-inline text-uppercase">` + itemName + `</h5>
                             </div>
                             <div class="col-12 col-md-4">
-                                <strong>Grams: </strong>` + itemPp + `
+                                <strong>Portion: </strong>` + itemPortion + `
                             </div>
                             <div class="col-12 col-md-3">
                                <strong>Quantity: </strong> ` + itemGrams + `
