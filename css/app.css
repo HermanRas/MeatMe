@@ -1,4 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/8aa777a5cf7e863483848a81434d3b49?family=Goshen);
+@font-face {
+    font-family: Goshen;
+    src: url("font/Goshen.otf") format("opentype");
+}
 
 *{
     border-style: box;
@@ -10,7 +13,6 @@
 body{
     overflow-x: hidden !important ;
     background-color: rgb(250, 236, 219);
-    background-image: url("../img/bg_tile3.jpg");
     color: #613916;
 }
 
@@ -52,7 +54,8 @@ h5{
 }
 
 .buy-item{
-    width: 4rem;
+    width: 8rem;
+    height: 8rem;
 }
 
 .search{
