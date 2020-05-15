@@ -11,6 +11,7 @@
         <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
         </div>
+        <!-- CART -->
         <div class="cart">
             <a class="btn  btn-outline-secondary text-white" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
