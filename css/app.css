@@ -6,6 +6,7 @@
 
 body{
     overflow-x: hidden !important ;
+    background-color: #CFB18D;
 }
 
 #carouselExampleControls > div > div > div > h5,#carouselExampleControls > div > div > div > p{
@@ -18,11 +19,11 @@ body{
 
 .main-ico-text{
     position: relative;
-    color: var(--secondary-dark);
+    color: var(--dark);
     font-size: 2rem;
     font-weight: bold;
     top: 0px;
-    text-shadow: 2px 2px 8px #000;
+    text-shadow: 2px 2px 8px rgb(124, 124, 124);
 }
 
 .buy-item{
@@ -56,7 +57,9 @@ body{
         display: none !important;
     }
 
-    
+    .index-img {
+        max-width: 60%;
+    }
 }
 
 .cart-icon{

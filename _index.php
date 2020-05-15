@@ -1,5 +1,5 @@
 <div class="container mt-3">
-    <img src="img/icon.jpg" class="d-block d-sm-none mx-auto rounded">
+    <img src="img/icon.jpg" class="index-img d-block d-sm-none mx-auto rounded">
     <div class="d-none d-sm-block">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -44,7 +44,7 @@
         </div>
     </div>
     <hr>
-    <h1 class="bg-secondary-dark rounded p-2">QWEENS ONLINE DELI</h1>
+    <h1 class="bg-secondary-dark text-dark rounded p-2 text-center">QWEENS ONLINE DELI</h1>
     <div class="row">
         <div class="col-6 col-md-4 text-center">
             <a href="beef.php" class="btn btn-outline-secondary">
