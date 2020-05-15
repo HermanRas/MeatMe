@@ -66,13 +66,13 @@
                     </a>
                     <label class="main-ico-text" for="lamb">LAMB</label>
                 </div>
-                <div class="col-6 col-md-4 text-center">
+                <!-- <div class="col-6 col-md-4 text-center">
                     <a href="poultry.php" class="btn btn-outline-secondary">
                         <img src="https://via.placeholder.com/400x250.png?text=400x250 + POULTRY"
                             class="img-fluid rounded main-ico">
                     </a>
                     <label class="main-ico-text" for="poultry">POULTRY</label>
-                </div>
+                </div> -->
                 <div class="col-6 col-md-4 text-center">
                     <a href="venison.php" class="btn btn-outline-secondary">
                         <img src="https://via.placeholder.com/400x250.png?text=400x250 + VENISON" id="venison"
@@ -81,12 +81,19 @@
                     <label class="main-ico-text" for="venison">VENISON</label>
                 </div>
                 <div class="col-6 col-md-4 text-center">
+                    <a href="biltong.php" class="btn btn-outline-secondary">
+                        <img src="https://via.placeholder.com/400x250.png?text=400x250 + BILTONG" id="other"
+                            class="img-fluid rounded main-ico">
+                    </a>
+                    <label class="main-ico-text" for="other">BILTONG</label>
+                </div>
+                <!-- <div class="col-6 col-md-4 text-center">
                     <a href="other.php" class="btn btn-outline-secondary">
                         <img src="https://via.placeholder.com/400x250.png?text=400x250 + OTHER" id="other"
                             class="img-fluid rounded main-ico">
                     </a>
                     <label class="main-ico-text" for="other">OTHER</label>
-                </div>
+                </div> -->
             </div>
 
             <br>
