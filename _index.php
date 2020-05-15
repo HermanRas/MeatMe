@@ -1,5 +1,5 @@
 <div class="container mt-3">
-    <img src="img/icon.jpg" class="index-img d-block d-sm-none mx-auto rounded">
+    <img src="img/icon.png" class="index-img d-block d-sm-none mx-auto rounded">
     <div class="d-none d-sm-block">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

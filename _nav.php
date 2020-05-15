@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1">
     <!-- ICON  -->
     <a class="navbar-brand" href="index.php">
-        <img src="img/icon.jpg" class="d-inline-block nav-img align-top rounded">
+        <img src="img/icon.png" class="d-inline-block nav-img align-top rounded">
     </a>
 
     <!-- SEARCH -->

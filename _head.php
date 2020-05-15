@@ -5,7 +5,7 @@
 
 <!-- Chrome/android APP settings -->
 <meta name="theme-color" content="#797641">
-<link rel="icon" href="img/icon.jpg" sizes="192x192">
+<link rel="icon" href="img/icon.png" sizes="192x192">
 <!-- end of Chrome/Android App Settings  -->
 
 <!-- Bootstrap // you can use hosted CDN here-->
