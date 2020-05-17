@@ -45,22 +45,19 @@
     <div class="row">
         <div class="col-6 col-md-4 text-center">
             <a href="beef.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + BEEF" id="beef"
-                    class="img-fluid rounded main-ico-text">
+                <img src="img/menu/BEEF.png" width="400" height="250" id="beef" class="img-fluid rounded main-ico-text">
             </a>
             <label class="main-ico-text" for="beef">BEEF</label>
         </div>
         <div class="col-6 col-md-4 text-center">
             <a href="pork.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + PORK" id="pork"
-                    class="img-fluid rounded main-ico">
+                <img src="img/menu/PORK.png" width="400" height="250" id="pork" class="img-fluid rounded main-ico">
             </a>
             <label class="main-ico-text" for="pork">PORK</label>
         </div>
         <div class="col-6 col-md-4 text-center">
             <a href="lamb.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + LAMB" id="lamb"
-                    class="img-fluid rounded main-ico">
+                <img src="img/menu/LAMB.png" width="400" height="250" id="lamb" class="img-fluid rounded main-ico">
             </a>
             <label class="main-ico-text" for="lamb">LAMB</label>
         </div>
@@ -73,17 +70,16 @@
         </div> -->
         <div class="col-6 col-md-4 text-center">
             <a href="venison.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + VENISON" id="venison"
+                <img src="img/menu/venison.jpg" width="400" height="250" id="venison"
                     class="img-fluid rounded main-ico">
             </a>
             <label class="main-ico-text" for="venison">VENISON</label>
         </div>
         <div class="col-6 col-md-4 text-center">
             <a href="biltong.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + BILTONG" id="other"
-                    class="img-fluid rounded main-ico">
+                <img src="img/menu/biltong.png" width="400" height="250" id="other" class="img-fluid rounded main-ico">
             </a>
-            <label class="main-ico-text" for="other">BILTONG & DRYWORS</label>
+            <label class="main-ico-text" for="other">BILTONG & DROëWORS</label>
         </div>
         <div class="col-6 col-md-4 text-center">
             <a href="other.php" class="btn btn-outline-secondary">

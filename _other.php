@@ -8,7 +8,7 @@
         </div>
         <div class="text-center">
             <hr>
-            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DRYWORS</a>
+            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DROëWORS</a>
             <a class="btn  btn-primary" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>
@@ -366,7 +366,7 @@
 
         </form>
         <div class="text-center">
-            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DRYWORS</a>
+            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DROëWORS</a>
             <a class="btn  btn-primary" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>

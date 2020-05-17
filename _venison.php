@@ -13,7 +13,7 @@
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>
             </a>
-            <a class="btn  btn-primary" href="biltong.php">BILTONG & DRYWORS &gt;</a>
+            <a class="btn  btn-primary" href="biltong.php">BILTONG & DROëWORS &gt;</a>
         </div>
         <hr>
         <?php
@@ -93,7 +93,7 @@
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>
             </a>
-            <a class="btn  btn-primary" href="biltong.php">BILTONG & DRYWORS &gt;</a>
+            <a class="btn  btn-primary" href="biltong.php">BILTONG & DROëWORS &gt;</a>
         </div>
         <hr>
     </div>
