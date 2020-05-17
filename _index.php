@@ -9,24 +9,21 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://via.placeholder.com/1920x500.png?text=1920x500 + ADD1"
-                        alt="First slide">
+                    <img class="d-block w-100" src="img/Slider/1920x500.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Deli Meat!</h5>
                         <p>Any time is snack time !</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/1920x500.png?text=1920x500 + ADD2"
-                        alt="Second slide">
+                    <img class="d-block w-100" src="img/Slider/1920x500.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Fresh Raw Meat</h5>
                         <p>Some Text ....... and some more</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://via.placeholder.com/1920x500.png?text=1920x500 + ADD3"
-                        alt="Third slide">
+                    <img class="d-block w-100" src="img/Slider/1920x500.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Game Processing</h5>
                         <p>You shoot it, we pack it!</p>

@@ -5,9 +5,16 @@
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + OTHER"
                 alt="other">
-
         </div>
-        <br>
+        <div class="text-center">
+            <hr>
+            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DRYWORS</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="index.php">MENU &gt;</a>
+        </div>
         <hr>
         <form action="">
             <!-- NEK START-->
@@ -354,10 +361,17 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <!-- SHANK END-->
 
         </form>
-        <br>
-        <hr>
-    </div>
+        <div class="text-center">
+            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DRYWORS</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="index.php">MENU &gt;</a>
+            <hr>
+        </div>
 </main>

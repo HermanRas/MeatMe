@@ -5,10 +5,19 @@
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + POULTRY"
                 alt="poultry">
-
+        </div>
+        <div class="text-center">
+            <br>
+            <hr>
+            <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="pork.php">PORK &gt;</a>
         </div>
         <br>
-        <hr>
+        <hr>>
         <form action="">
             <!-- NEK START-->
             <div class="media">
@@ -357,6 +366,16 @@
             <!-- SHANK END-->
 
         </form>
+        <div class="text-center">
+            <br>
+            <hr>
+            <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="pork.php">PORK &gt;</a>
+        </div>
         <br>
         <hr>
     </div>

@@ -5,9 +5,16 @@
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + PORK"
                 alt="PORK">
-
         </div>
-        <br>
+        <div class="text-center">
+            <hr>
+            <a class="btn  btn-primary" href="beef.php">&lt; BEEF</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="LAMB.php">LAMB &gt;</a>
+        </div>
         <hr>
         <?php
         // Load Items
@@ -79,9 +86,15 @@
         <!-- Item END-->
         <?php
         }
-
         ?>
-        <br>
+        <div class="text-center">
+            <a class="btn  btn-primary" href="beef.php">&lt; BEEF</a>
+            <a class="btn  btn-primary" href="cart.php">
+                <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
+                    id="cartCount"></span>
+            </a>
+            <a class="btn  btn-primary" href="lamb.php">LAMB &gt;</a>
+        </div>
         <hr>
     </div>
 </main>

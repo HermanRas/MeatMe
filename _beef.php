@@ -5,10 +5,9 @@
         <div class="text-center">
             <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + BEEF"
                 alt="beef">
-
         </div>
-        <br>
         <div class="text-center">
+            <hr>
             <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
             <a class="btn  btn-primary" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
@@ -90,11 +89,6 @@
 
         ?>
         <div class="text-center">
-            <button type="button" class="btn btn-primary">Main Pri</button>
-            <button type="button" class="btn btn-secondary">Main Sec</button>
-            <button type="button" class="btn btn-dark">Main Dark</button>
-            <br>
-            <hr>
             <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
             <a class="btn  btn-primary" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
@@ -102,7 +96,6 @@
             </a>
             <a class="btn  btn-primary" href="pork.php">PORK &gt;</a>
         </div>
-        <br>
         <hr>
     </div>
 </main>
