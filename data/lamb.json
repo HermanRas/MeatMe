@@ -2,9 +2,12 @@
     "items": [
         {
             "name": "WHOLE LAMB",
-            "IMG": "Whole.png",
+            "IMG": "img/lamb/WHOLE_HALF-LAMB.png",
             "Price p/kg": 500,
             "Portion Size": [
+                {
+                    "10500": "HALF LAMB"
+                },
                 {
                     "21000": "WHOLE LAMB"
                 }
@@ -14,7 +17,7 @@
         },
         {
             "name": "LOIN CHOPS",
-            "IMG": "LoinChops.jpg",
+            "IMG": "img/lamb/LAM-LOIN-CHOP.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -26,7 +29,7 @@
         },
         {
             "name": "LAMB SHANK",
-            "IMG": "LAMB-SHANK.jpg",
+            "IMG": "img/lamb/LAMB-SHANK.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -38,7 +41,7 @@
         },
         {
             "name": "LAMB BRAAI CHOPS",
-            "IMG": "LAMB-BRAAI-CHOPS.jpg",
+            "IMG": "img/lamb/LAMB-BRAAI-CHOPS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -50,7 +53,7 @@
         },
         {
             "name": "LAMB RIB",
-            "IMG": "LAMB-RIB.jpg",
+            "IMG": "img/lamb/LAMB-RIB.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -62,7 +65,7 @@
         },
         {
             "name": "LEG OF LAMB",
-            "IMG": "LEG-OF-LAMB.jpg",
+            "IMG": "img/lamb/LEG-OF-LAMB.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -74,7 +77,7 @@
         },
         {
             "name": "POTJIE",
-            "IMG": "POTJIE.jpg",
+            "IMG": "img/lamb/LAMB-POTJIE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -89,7 +92,7 @@
         },
         {
             "name": "LAMB NECK",
-            "IMG": "LAMB-NECK.jpg",
+            "IMG": "img/lamb/lamb-neck.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {

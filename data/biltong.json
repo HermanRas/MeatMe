@@ -1,3 +1,64 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "BEEF BILTONG",
+            "IMG": "img/biltong/BEEF-BILTONG.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "CHILLIE BITES",
+            "IMG": "img/biltong/CHILLIEBITES.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "COMBO PACK",
+            "IMG": "img/biltong/COMBINATION.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1500": "1.5kg"
+                },
+                {
+                    "2000": "2kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "DRY-WORS",
+            "IMG": "img/biltong/droewors.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        }
+    ]
 }

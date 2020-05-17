@@ -2,7 +2,7 @@
     "items": [
         {
             "name": "PORK BELLY",
-            "IMG": "PorkBelly.png",
+            "IMG": "img/pork/PORK-BELLY.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -14,7 +14,7 @@
         },
         {
             "name": "BEST END CHOPS",
-            "IMG": "BestChops.jpg",
+            "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -26,7 +26,7 @@
         },
         {
             "name": "LOIN CHOPS",
-            "IMG": "LoinChops.jpg",
+            "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -38,7 +38,7 @@
         },
         {
             "name": "BOUD CHOPS",
-            "IMG": "BoudChops.jpg",
+            "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -50,7 +50,7 @@
         },
         {
             "name": "RACHERS",
-            "IMG": "RACHERS.jpg",
+            "IMG": "img/pork/PORK-RASHERS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -62,7 +62,19 @@
         },
         {
             "name": "PORK ROAST",
-            "IMG": "PorkROAST.jpg",
+            "IMG": "img/pork/400x400.png",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "1200": "1 x Roast"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "PORK FILLET",
+            "IMG": "img/pork/PORK-FILLET.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -74,7 +86,7 @@
         },
         {
             "name": "SPARE RIBS",
-            "IMG": "SPARE_RIBS.jpg",
+            "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {

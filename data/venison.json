@@ -2,7 +2,7 @@
     "items": [
         {
             "name": "BOEREWORS",
-            "IMG": "BOEREWORS.png",
+            "IMG": "img/venison/WILDSWORS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -17,7 +17,7 @@
         },
         {
             "name": "CURRY KEBABS",
-            "IMG": "CURRY-KEBABS.png",
+            "IMG": "img/venison/CURRY-SOSATIES.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -32,7 +32,7 @@
         },
         {
             "name": "STEWING",
-            "IMG": "STEWING.png",
+            "IMG": "img/venison/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -47,7 +47,7 @@
         },
         {
             "name": "POTJIE",
-            "IMG": "POTJIE.png",
+            "IMG": "img/venison/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -62,11 +62,26 @@
         },
         {
             "name": "PATTIES",
-            "IMG": "PATTIES.png",
+            "IMG": "img/venison/VENISON-PATTIES.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
                     "1200": "6 Patties"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "MINCE",
+            "IMG": "img/venison/Venison-Mince.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "1 x 500g"
+                },
+                {
+                    "1000": "1 x 1kg"
                 }
             ],
             "minQTY": 1,
