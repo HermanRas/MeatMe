@@ -13,7 +13,7 @@
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>
             </a>
-            <a class="btn  btn-primary" href="LAMB.php">LAMB &gt;</a>
+            <a class="btn  btn-primary" href="lamb.php">LAMB &gt;</a>
         </div>
         <hr>
         <?php

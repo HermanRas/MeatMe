@@ -8,7 +8,7 @@
         </div>
         <div class="text-center">
             <hr>
-            <a class="btn  btn-primary" href="LAMB.php">&lt; LAMB</a>
+            <a class="btn  btn-primary" href="lamb.php">&lt; LAMB</a>
             <a class="btn  btn-primary" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>

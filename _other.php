@@ -18,7 +18,7 @@
         <hr>
         <?php
         // Load Items
-        $jsonfile = file_get_contents("data/OTHER.json");
+        $jsonfile = file_get_contents("data/other.json");
         $json_data = json_decode($jsonfile, true);
 
         //Display Items

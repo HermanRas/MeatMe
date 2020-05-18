@@ -41,52 +41,27 @@
         </div>
     </div>
     <hr>
-    <h1 class="bg-secondary-dark rounded p-2 text-center">QWEENS <br><small>ONLINE DELI</small></h1>
-    <div class="row">
-        <div class="col-6 col-md-4 text-center">
-            <a href="beef.php" class="btn btn-outline-secondary">
-                <img src="img/menu/BEEF.png" width="400" height="250" id="beef" class="img-fluid rounded main-ico-text">
-            </a>
-            <label class="main-ico-text" for="beef">BEEF</label>
+    <!-- <h1 class="bg-secondary-dark rounded p-2 text-center">QWEENS <br><small>ONLINE DELI</small></h1> -->
+    <div class="row align-items-center h-100">
+        <div class="col-6 col-md-4 text-center mt-2">
+            <a href="beef.php" class="btn btn-secondary main-ico-text">BEEF</a>
         </div>
-        <div class="col-6 col-md-4 text-center">
-            <a href="pork.php" class="btn btn-outline-secondary">
-                <img src="img/menu/PORK.png" width="400" height="250" id="pork" class="img-fluid rounded main-ico">
-            </a>
-            <label class="main-ico-text" for="pork">PORK</label>
+        <div class="col-6 col-md-4 text-center mt-2">
+            <a href="pork.php" class="btn btn-secondary main-ico-text">PORK</a>
         </div>
-        <div class="col-6 col-md-4 text-center">
-            <a href="lamb.php" class="btn btn-outline-secondary">
-                <img src="img/menu/LAMB.png" width="400" height="250" id="lamb" class="img-fluid rounded main-ico">
-            </a>
-            <label class="main-ico-text" for="lamb">LAMB</label>
+        <div class="col-6 col-md-4 text-center mt-2">
+            <a href="LAMB.php" class="btn btn-secondary main-ico-text">LAMB</a>
         </div>
-        <!-- <div class="col-6 col-md-4 text-center">
-            <a href="poultry.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + POULTRY"
-                    class="img-fluid rounded main-ico">
-            </a>
-            <label class="main-ico-text" for="poultry">POULTRY</label>
-        </div> -->
-        <div class="col-6 col-md-4 text-center">
-            <a href="venison.php" class="btn btn-outline-secondary">
-                <img src="img/menu/venison.jpg" width="400" height="250" id="venison"
-                    class="img-fluid rounded main-ico">
-            </a>
-            <label class="main-ico-text" for="venison">VENISON</label>
+        <div class="col-6 col-md-4 text-center mt-2">
+            <a href="VENISON.php" class="btn btn-secondary main-ico-text">VENISON</a>
         </div>
-        <div class="col-6 col-md-4 text-center">
-            <a href="biltong.php" class="btn btn-outline-secondary">
-                <img src="img/menu/biltong.png" width="400" height="250" id="other" class="img-fluid rounded main-ico">
-            </a>
-            <label class="main-ico-text" for="other">BILTONG & DROëWORS</label>
+        <div class="col-6 col-md-4 text-center mt-2">
+            <a href="biltong.php" style="font-size: 1.5rem; padding-top: 2em;"
+                class="btn btn-secondary main-ico-text">BILTONG
+                DROëWORS</a>
         </div>
-        <div class="col-6 col-md-4 text-center">
-            <a href="other.php" class="btn btn-outline-secondary">
-                <img src="https://via.placeholder.com/400x250.png?text=400x250 + OTHER" id="other"
-                    class="img-fluid rounded main-ico">
-            </a>
-            <label class="main-ico-text" for="other">OTHER</label>
+        <div class="col-6 col-md-4 text-center mt-2">
+            <a href="other.php" class="btn btn-secondary main-ico-text">OTHER</a>
         </div>
     </div>
 
