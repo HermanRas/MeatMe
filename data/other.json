@@ -1,0 +1,94 @@
+{
+    "items": [
+        {
+            "name": "VENISON SMALL PIE",
+            "IMG": "img/other/VENISONPIE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "200": "200g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "VENISON PIE",
+            "IMG": "img/other/VENISONPIE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                },
+                {
+                    "1500": "1.5kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "VENISON BOBOTIE PIE",
+            "IMG": "img/other/Bobotiepie.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "200": "200g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "VENISON BOBOTIE",
+            "IMG": "img/other/Bobotie.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                },
+                {
+                    "1500": "1.5kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "VENISON LASAGNE",
+            "IMG": "img/other/VENISONLASAGNE.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                },
+                {
+                    "1500": "1.5kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "VENISON SAUSAGE ROLLS",
+            "IMG": "img/other/VENISONSAUSAGEROLLS.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "200": "200g"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        }
+    ]
+}
