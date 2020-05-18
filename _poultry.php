@@ -289,12 +289,12 @@
 
             <hr>
 
-            <!-- SERLOIN START-->
+            <!-- sirloin START-->
             <div class="media">
-                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + SERLOIN"
-                    alt="serloin">
+                <img class="mr-3 buy-item" src="https://via.placeholder.com/400x400.png?text=400x400 + sirloin"
+                    alt="sirloin">
                 <div class="media-body">
-                    <h5 class="mt-0">Serloin</h5>
+                    <h5 class="mt-0">sirloin</h5>
                     <div class="form-row align-items-center">
                         <div class="col-auto">
                             <div class="input-group mb-2">
@@ -324,7 +324,7 @@
                     </div>
                 </div>
             </div>
-            <!-- SERLOIN END-->
+            <!-- sirloin END-->
 
             <hr>
 
