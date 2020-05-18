@@ -3,10 +3,6 @@
     <div class="container mt-3">
         <h1 class="bg-secondary-dark rounded p-2">Poultry</h1>
         <div class="text-center">
-            <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + POULTRY"
-                alt="poultry">
-        </div>
-        <div class="text-center">
             <br>
             <hr>
             <a class="btn  btn-primary" href="index.php">&lt; MENU</a>

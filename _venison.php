@@ -3,10 +3,6 @@
     <div class="container mt-3">
         <h1 class="bg-secondary-dark rounded p-2">VENISON</h1>
         <div class="text-center">
-            <img class="img-fluid rounded " src="https://via.placeholder.com/400x250.png?text=400x250 + VENISON"
-                alt="VENISON">
-        </div>
-        <div class="text-center">
             <hr>
             <a class="btn  btn-primary" href="lamb.php">&lt; LAMB</a>
             <a class="btn  btn-primary" href="cart.php">
