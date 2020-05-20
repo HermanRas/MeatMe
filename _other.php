@@ -23,9 +23,9 @@
         <!-- Item START-->
         <form id="<?php echo $item["name"]; ?>Frm">
             <div class="media">
-                <img class="mr-3 buy-item" src="<?php echo $item["IMG"]; ?>" alt="<?php echo $item["name"]; ?>">
+                <img class="mr-3 buy-item" src="<?php echo $item["IMG"]; ?>" alt="<?php echo $item["desc"]; ?>">
                 <div class="media-body">
-                    <h5 class="mt-0"><?php echo $item["name"]; ?></h5>
+                    <h5 class="mt-0"><?php echo $item["desc"]; ?></h5>
                     <div class="form-row align-items-center">
 
                         <div class="col-auto">
