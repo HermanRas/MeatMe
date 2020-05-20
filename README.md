@@ -41,8 +41,23 @@
 
 ## ChangeLog
 - DONE 2020-05-02 Added Page Swipe animation
+- DONE 2020-05-03 to 2020-05-17 ALL Styling DONE! Pages=25, Scripts=6, StyleSheets=5, DataFiles=6
+- DONE 2020-05-18 cart calculation js 
+- UPDATE 2020-05-19 index.php about us
+- UPDATE 2020-05-20 "Beef Boerewors" -> Boerewors
+- UPDATE 2020-05-20 "Beef Liver" removed
+- UPDATE 2020-05-20 "Beef Ribs" removed
+- UPDATE 2020-05-20 "Pork Ribs" removed
+- UPDATE 2020-05-20 "Biltong Chillie Bites" -> "Beef Chillie Bites"
+- UPDATE 2020-05-20 "Biltong Drywors" -> "Beef Droëwors"
+- UPDATE 2020-05-20 "Combo pack" -> "Venison Biltong"
+- UPDATE 2020-05-20 "Venison Droëwors" added
+- UPDATE 2020-05-20 "Venison Small pie" -> "Venison Pie" {200g,500g,1kg,1.5kg}
+- UPDATE 2020-05-20 "Venison pie" -> "Venison Cornish Pie" {200g,500g,1kg,1.5kg}
+- UPDATE 2020-05-20 "Venison BOBOTIE PIE" portions {200g,500g,1kg,1.5kg}
+
 ## To-Do
-- ALL
+- NONE
 
 ## Look-At-Implementing
 - NONE
