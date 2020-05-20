@@ -88,11 +88,17 @@ function remoteItemCart(item) {
     pageCart();
 }
 
-
 /////////////////////////////////////////////////////////////////////////////////
 //  Render Cart Page
 /////////////////////////////////////////////////////////////////////////////////
 function pageCart() {
+
+    // Load ZAR Currency formatter
+    var formatter = new Intl.NumberFormat('en-ZA', {
+        style: 'currency',
+        currency: 'ZAR',
+    });
+
     // load current cart if set
     if (localStorage.getItem('cart') === null) {
         window.localStorage.setItem('cart', JSON.stringify([]));
@@ -117,32 +123,47 @@ function pageCart() {
             </li>
         `;
     }
+
+    // TOTAL
+    let priceTotal = 0;
     currentCart.forEach(cartItem => {
-        const itemName = cartItem[0].name;
+
+        // lookup the item in storeData
+        const index = storeData.map(e => e.name).indexOf(cartItem[0].name);
+        const itemPrice = (cartItem[0].qnt * cartItem[0].portionValue / 1000) * storeData[index]['Price p/kg'];
+        priceTotal += itemPrice;
+        const itemIMG = storeData[index]['IMG'];
+        const itemDesc = storeData[index]['desc'];
         const itemPortion = cartItem[0].portionText;
         const itemGrams = cartItem[0].qnt;
         const html = document.getElementById('cartData').innerHTML;
+        // .toFixed(2)
         const listItem = `
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img style="width: 3rem;" class="rounded" src="https://via.placeholder.com/400x250.png?text=400x250 + ` + itemName + `" alt="nek">
-                                <h5 class="ml-1 d-inline text-uppercase">` + itemName + `</h5>
+                            <div class="col-12 col-md-3">
+                                <img style="width: 3rem;" class="rounded" src="`+ itemIMG + `" alt="` + itemDesc + `">
+                                <h5 class="ml-1 d-inline text-uppercase">` + itemDesc + `</h5>
                             </div>
-                            <div class="col-12 col-md-4">
+                            <div class="col-12 col-md-2">
                                 <strong>Portion: </strong>` + itemPortion + `
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                <strong>Quantity: </strong> ` + itemGrams + `
                             </div>
-                            <div class="col-12 col-md-1">
-                                <button type="button" class="btn btn-outline-secondary mt-1 float-right" id="`+ i + `" onclick="remoteItemCart(this);"> X </button>
+                            <div class="col-12 col-md-3">
+                               <strong>Price: </strong><div class="d-inline" id="price">` + formatter.format(itemPrice) + `</div>
+                            </div>
+                            <div class="col-12 col-md-1 text-right">
+                                <button type="button" class="btn btn-outline-secondary mt-1" id="`+ i + `" onclick="remoteItemCart(this);"> X </button>
                             </div>
                         </div>
                     </li>`;
         document.getElementById('cartData').innerHTML = html + listItem;
         i++;
     });
+    const html = document.getElementById('cartData').innerHTML;
+    document.getElementById('cartData').innerHTML = html + `<h1 class="text-right">` + formatter.format(priceTotal) + `</h1>`;
 }
 
 // if cart on page update

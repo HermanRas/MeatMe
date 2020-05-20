@@ -4,6 +4,7 @@
 <head>
     <!-- Add header -->
     <?php include_once('_head.php'); ?>
+    <?php include_once('_storeData.php'); ?>
 </head>
 
 <body data-barba="wrapper">
