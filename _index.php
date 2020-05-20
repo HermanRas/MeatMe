@@ -67,11 +67,10 @@
 
     <br>
     <hr>
-    <h2 class="bg-secondary-dark rounded p-2">Some Useless Info</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere amet perferendis dolores dolore,
-        quia
-        maxime eveniet aspernatur temporibus dolor officiis nemo, quibusdam illum odio? Quibusdam ea fugiat eum
-        impedit.</p>
+    <h2 class="bg-secondary-dark rounded p-2">Qweens Online Deli </h2>
+    <p>strives to provide good quality fresh products to our clients delivered to your doorstep. Our
+        products are locally sourced and we believe in supporting our local farmers and small businesses. We have taken
+        a great deal of time to source only the best high quality fresh products that guarantee top quality.</p>
 
     <br>
 </div>
