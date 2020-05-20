@@ -18,6 +18,7 @@
             </ul>
         </div>
         <br>
+        <a class="btn  btn-primary" href="index.php">&lt; Back to Shopping</a>
         <button type="button" class="btn btn-primary float-right"> Check Out </button>
         <br>
         <hr>
