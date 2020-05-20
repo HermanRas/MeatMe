@@ -1,7 +1,8 @@
 {
     "items": [
         {
-            "name": "PORK BELLY",
+            "name": "PORK:PORK BELLY",
+            "desc": "PORK BELLY",
             "IMG": "img/pork/PORK-BELLY.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -13,7 +14,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "BEST END CHOPS",
+            "name": "PORK:BEST END CHOPS",
+            "desc": "BEST END CHOPS",
             "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
@@ -25,7 +27,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LOIN CHOPS",
+            "name": "PORK:LOIN CHOPS",
+            "desc": "LOIN CHOPS",
             "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
@@ -37,7 +40,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "BOUD CHOPS",
+            "name": "PORK:BOUD CHOPS",
+            "desc": "BOUD CHOPS",
             "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
@@ -49,7 +53,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "RACHERS",
+            "name": "PORK:RACHERS",
+            "desc": "RACHERS",
             "IMG": "img/pork/PORK-RASHERS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -61,7 +66,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "PORK ROAST",
+            "name": "PORK:PORK ROAST",
+            "desc": "PORK ROAST",
             "IMG": "img/pork/400x400.png",
             "Price p/kg": 500,
             "Portion Size": [
@@ -73,24 +79,13 @@
             "maxQTY": 1000
         },
         {
-            "name": "PORK FILLET",
+            "name": "PORK:PORK FILLET",
+            "desc": "PORK FILLET",
             "IMG": "img/pork/PORK-FILLET.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
                     "1200": "1 x Roast"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "SPARE RIBS",
-            "IMG": "img/pork/400x400.png",
-            "Price p/kg": 500,
-            "Portion Size": [
-                {
-                    "600": "600g"
                 }
             ],
             "minQTY": 1,

@@ -1,7 +1,8 @@
 {
     "items": [
         {
-            "name": "FILLET",
+            "name": "BEEF:FILLET",
+            "desc": "FILLET",
             "IMG": "img/beef/BEEFFILLET.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -13,7 +14,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "RUMP STEAK",
+            "name": "BEEF:RUMP STEAK",
+            "desc": "RUMP STEAK",
             "IMG": "img/beef/BEEFRUMP.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -31,7 +33,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "SIRLOIN STEAK",
+            "name": "BEEF:SIRLOIN STEAK",
+            "desc": "SIRLOIN STEAK",
             "IMG": "img/beef/SERLOIN.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -49,7 +52,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "RIBEYE STEAK",
+            "name": "BEEF:RIBEYE STEAK",
+            "desc": "RIBEYE STEAK",
             "IMG": "img/beef/RIBEYE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -67,7 +71,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "T-BONE STEAK",
+            "name": "BEEF:T-BONE STEAK",
+            "desc": "T-BONE STEAK",
             "IMG": "img/beef/t-bone.bmp",
             "Price p/kg": 500,
             "Portion Size": [
@@ -82,7 +87,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "CLUB STEAK",
+            "name": "BEEF:CLUB STEAK",
+            "desc": "CLUB STEAK",
             "IMG": "img/beef/CLUB-STEAKS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -100,7 +106,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "PREGO STEAK",
+            "name": "BEEF:PREGO STEAK",
+            "desc": "PREGO STEAK",
             "IMG": "img/beef/PREGO-SIRLOIN-STEAKS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -112,7 +119,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "BEEF BOEREWORS",
+            "name": "BEEF:BOEREWORS",
+            "desc": "BOEREWORS",
             "IMG": "img/beef/BOEREWORS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -127,7 +135,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "MINCE",
+            "name": "BEEF:MINCE",
+            "desc": "MINCE",
             "IMG": "img/beef/BeefMince.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -142,7 +151,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "OXTAIL",
+            "name": "BEEF:OXTAIL",
+            "desc": "OXTAIL",
             "IMG": "img/beef/OXTAIL.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -154,7 +164,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "STIRFRY",
+            "name": "BEEF:STIRFRY",
+            "desc": "STIRFRY",
             "IMG": "img/beef/BEEFSTIRFRY.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -169,7 +180,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "STEWING BEEF",
+            "name": "BEEF:STEWING BEEF",
+            "desc": "STEWING BEEF",
             "IMG": "img/beef/STEWINGBEEF.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -184,7 +196,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "BEEF PATTIES",
+            "name": "BEEF:PATTIES",
+            "desc": "PATTIES",
             "IMG": "img/beef/BEEFPATTIE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -196,7 +209,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "BEEF TONGUE",
+            "name": "BEEF:TONGUE",
+            "desc": "TONGUE",
             "IMG": "img/beef/Beef-Ox-Tongue.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -208,22 +222,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LIVER",
-            "IMG": "img/beef/400x400.png",
-            "Price p/kg": 500,
-            "Portion Size": [
-                {
-                    "500": "1 x 500g"
-                },
-                {
-                    "1000": "1 x 1kg"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "MARROW BONES",
+            "name": "BEEF:MARROW BONES",
+            "desc": "MARROW BONES",
             "IMG": "img/beef/MARROWBONES.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -235,20 +235,9 @@
             "maxQTY": 1000
         },
         {
-            "name": "SOSATIES",
+            "name": "BEEF:SOSATIES",
+            "desc": "SOSATIES",
             "IMG": "img/beef/beef-sosaties.jpg",
-            "Price p/kg": 500,
-            "Portion Size": [
-                {
-                    "1000": "1 x 1kg"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "RIBS",
-            "IMG": "img/beef/BEEF-RIB.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {

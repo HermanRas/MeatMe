@@ -1,7 +1,8 @@
 {
     "items": [
         {
-            "name": "WHOLE LAMB",
+            "name": "LAMB:WHOLE LAMB",
+            "desc": "WHOLE LAMB",
             "IMG": "img/lamb/WHOLE_HALF-LAMB.png",
             "Price p/kg": 500,
             "Portion Size": [
@@ -16,7 +17,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LOIN CHOPS",
+            "name": "LAMB:LOIN CHOPS",
+            "desc": "LOIN CHOPS",
             "IMG": "img/lamb/LAM-LOIN-CHOP.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -28,7 +30,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LAMB SHANK",
+            "name": "LAMB:LAMB SHANK",
+            "desc": "LAMB SHANK",
             "IMG": "img/lamb/LAMB-SHANK.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -40,7 +43,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LAMB BRAAI CHOPS",
+            "name": "LAMB:LAMB BRAAI CHOPS",
+            "desc": "LAMB BRAAI CHOPS",
             "IMG": "img/lamb/LAMB-BRAAI-CHOPS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -52,7 +56,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LAMB RIB",
+            "name": "LAMB:LAMB RIB",
+            "desc": "LAMB RIB",
             "IMG": "img/lamb/LAMB-RIB.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -64,7 +69,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LEG OF LAMB",
+            "name": "LAMB:LEG OF LAMB",
+            "desc": "LEG OF LAMB",
             "IMG": "img/lamb/LEG-OF-LAMB.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -76,7 +82,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "POTJIE",
+            "name": "LAMB:POTJIE",
+            "desc": "POTJIE",
             "IMG": "img/lamb/LAMB-POTJIE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -91,7 +98,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "LAMB NECK",
+            "name": "LAMB:LAMB NECK",
+            "desc": "LAMB NECK",
             "IMG": "img/lamb/lamb-neck.jpg",
             "Price p/kg": 500,
             "Portion Size": [

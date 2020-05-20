@@ -1,8 +1,9 @@
 {
     "items": [
         {
-            "name": "BEEF BILTONG",
-            "IMG": "img/biltong/BEEF-BILTONG.jpg",
+            "name": "BILTONG:BEEF BILTONG",
+            "desc": "BEEF BILTONG",
+            "IMG": "img/biltong/B-BILTONG.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -16,7 +17,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "CHILLIE BITES",
+            "name": "BILTONG:CHILLIE BITES",
+            "desc": "BEEF CHILLIE BITES",
             "IMG": "img/biltong/CHILLIEBITES.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -31,8 +33,9 @@
             "maxQTY": 1000
         },
         {
-            "name": "COMBO PACK",
-            "IMG": "img/biltong/COMBINATION.jpg",
+            "name": "BILTONG:VenisonBiltong",
+            "desc": "Venison Biltong",
+            "IMG": "img/biltong/V-BILTONG.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
@@ -46,8 +49,25 @@
             "maxQTY": 1000
         },
         {
-            "name": "DRY-WORS",
+            "name": "BILTONG:Droëwors",
+            "desc": "Beef Droëwors",
             "IMG": "img/biltong/droewors.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "BILTONG:VenisonDroëwors",
+            "desc": "Venison Droëwors",
+            "IMG": "img/biltong/Venison-Doewors.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {

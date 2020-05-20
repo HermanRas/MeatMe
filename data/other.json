@@ -1,22 +1,14 @@
 {
     "items": [
         {
-            "name": "VENISON SMALL PIE",
-            "IMG": "img/other/VENISONPIE.jpg",
+            "name": "OTHER:VENISON PIE",
+            "desc": "VENISON PIE",
+            "IMG": "img/other/VENISON-PIES.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
                     "200": "200g"
-                }
-            ],
-            "minQTY": 1,
-            "maxQTY": 1000
-        },
-        {
-            "name": "VENISON PIE",
-            "IMG": "img/other/VENISONPIE.jpg",
-            "Price p/kg": 500,
-            "Portion Size": [
+                },
                 {
                     "500": "500g"
                 },
@@ -31,19 +23,52 @@
             "maxQTY": 1000
         },
         {
-            "name": "VENISON BOBOTIE PIE",
-            "IMG": "img/other/Bobotiepie.jpg",
+            "name": "OTHER:VENISON CORNISH PIE",
+            "desc": "VENISON CORNISH PIE",
+            "IMG": "img/other/Venison-Cornish-Pie.jpg",
             "Price p/kg": 500,
             "Portion Size": [
                 {
                     "200": "200g"
+                },
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                },
+                {
+                    "1500": "1.5kg"
                 }
             ],
             "minQTY": 1,
             "maxQTY": 1000
         },
         {
-            "name": "VENISON BOBOTIE",
+            "name": "OTHER:VENISON BOBOTIE PIE",
+            "desc": "VENISON BOBOTIE PIE",
+            "IMG": "img/other/Bobotiepie.jpg",
+            "Price p/kg": 500,
+            "Portion Size": [
+                {
+                    "200": "200g"
+                },
+                {
+                    "500": "500g"
+                },
+                {
+                    "1000": "1kg"
+                },
+                {
+                    "1500": "1.5kg"
+                }
+            ],
+            "minQTY": 1,
+            "maxQTY": 1000
+        },
+        {
+            "name": "OTHER:VENISON BOBOTIE",
+            "desc": "VENISON BOBOTIE",
             "IMG": "img/other/Bobotie.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -61,7 +86,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "VENISON LASAGNE",
+            "name": "OTHER:VENISON LASAGNE",
+            "desc": "VENISON LASAGNE",
             "IMG": "img/other/VENISONLASAGNE.jpg",
             "Price p/kg": 500,
             "Portion Size": [
@@ -79,7 +105,8 @@
             "maxQTY": 1000
         },
         {
-            "name": "VENISON SAUSAGE ROLLS",
+            "name": "OTHER:VENISON SAUSAGE ROLLS",
+            "desc": "VENISON SAUSAGE ROLLS",
             "IMG": "img/other/VENISONSAUSAGEROLLS.jpg",
             "Price p/kg": 500,
             "Portion Size": [
