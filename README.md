@@ -55,6 +55,7 @@
 - UPDATE 2020-05-20 "Venison Small pie" -> "Venison Pie" {200g,500g,1kg,1.5kg}
 - UPDATE 2020-05-20 "Venison pie" -> "Venison Cornish Pie" {200g,500g,1kg,1.5kg}
 - UPDATE 2020-05-20 "Venison BOBOTIE PIE" portions {200g,500g,1kg,1.5kg}
+- DONE 2020-05-20 added back 2 shop button on cart page
 
 ## To-Do
 - NONE
