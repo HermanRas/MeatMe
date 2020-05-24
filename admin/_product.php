@@ -3,6 +3,7 @@
 
         echo "<h1> One Day this will save your data </h1>";
         var_dump($_POST);
+        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> CANCEL </a>';
         die;
     }
 
