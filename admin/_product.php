@@ -12,7 +12,7 @@
         $jsonfile = file_get_contents("../data/$product");
         $json_data = json_decode($jsonfile, true);
     }else{    
-        header("Location: products.php"); 
+        echo '<script>window.location.replace("products.php");</script>';
         die;
     }
 ?>

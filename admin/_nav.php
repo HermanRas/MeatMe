@@ -2,12 +2,12 @@
     if(isset($_SESSION['user'])){
         if ($_SESSION['user'] !== "admin"){
             // not admin
-            header("Location: index.php"); 
+            echo '<script>window.location.replace("index.php");</script>';
             die;
         }
     }else{
             // not logged in
-            header("Location: index.php"); 
+            echo '<script>window.location.replace("index.php");</script>';
             die;
     }
 ?>
