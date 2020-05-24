@@ -7,6 +7,7 @@ session_start();
 <head>
     <!-- Add header -->
     <?php include_once('_head.php'); ?>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body data-barba="wrapper">
