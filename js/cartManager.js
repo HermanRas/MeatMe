@@ -141,7 +141,7 @@ function pageCart() {
         const listItem = `
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-4">
                                 <img style="width: 3rem;" class="rounded" src="`+ itemIMG + `" alt="` + itemDesc + `">
                                 <h5 class="ml-1 d-inline text-uppercase">` + itemDesc + `</h5>
                             </div>
