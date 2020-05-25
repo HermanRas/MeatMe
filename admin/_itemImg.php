@@ -64,7 +64,7 @@ echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
     ?>
     <form method="POST">
         <div class="form-group">
-            <label for="newPic">Please select picture</label>
+            <label for="newPic">Please select picture to upload</label>
             <input type="file" class="form-control-file" name="newPic" id="newPic" onchange="form.submit()">
         </div>
     </form>
