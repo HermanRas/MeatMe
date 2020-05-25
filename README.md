@@ -59,6 +59,10 @@
 - DONE 2020-05-24 Admin login
 - DONE 2020-05-24 Product Page
 - DONE 2020-05-24 Dash Design
+- DONE 2020-05-25 redesigned the update products / items, a lot more user friendly
+- DONE 2020-05-25 added image upload for products / items
+- DONE 2020-05-25 added admin orders active page
+- DONE 2020-05-25 added admin history page
 
 ## To-Do
 - NONE
