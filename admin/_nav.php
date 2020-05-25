@@ -40,9 +40,8 @@
                     Orders
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuOrders">
-                    <a class="dropdown-item" href="#">Order History</a>
-                    <a class="dropdown-item" href="#">Orders Active</a>
-                    <a class="dropdown-item" href="#">Orders Stats</a>
+                    <a class="dropdown-item" href="ordersActive.php">Orders Active</a>
+                    <a class="dropdown-item" href="ordersHistory.php">Order History</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

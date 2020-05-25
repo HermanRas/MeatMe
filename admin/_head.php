@@ -10,6 +10,8 @@
 
 <!-- Bootstrap // you can use hosted CDN here-->
 <link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 <link href="../css/app.css" rel="stylesheet">
 <link href="css/admin.css" rel="stylesheet">
 <!-- end of bootstrap -->
