@@ -93,4 +93,4 @@
     </form>
 </div>
 <!-- page Script -->
-<script src="js/newProduct.js"></script>
+<script src="js/catagoryItems.js"></script>
