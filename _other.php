@@ -85,12 +85,12 @@
 
         ?>
         <div class="text-center">
-            <a class="btn  btn-primary" href="index.php">&lt; MENU</a>
+            <a class="btn  btn-primary" href="biltong.php">&lt; BILTONG & DROëWORS</a>
             <a class="btn  btn-primary" href="cart.php">
                 <i class="fas fa-shopping-cart cart-icon"></i><span class="badge-pill badge-danger cart-notify"
                     id="cartCount"></span>
             </a>
-            <a class="btn  btn-primary" href="pork.php">PORK &gt;</a>
+            <a class="btn  btn-primary" href="index.php">MENU &gt;</a>
         </div>
         <hr>
     </div>
