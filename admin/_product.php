@@ -179,7 +179,7 @@
                 <?php
                  $files = array_diff(scandir('../img/'.str_replace('.json','',$product)), array('..', '.'));
                  foreach ($files as $file) {
-                     echo '<option value="'.'../img/'.str_replace('.json','',$product).'/'.$file.'">'.$file.'</option>';
+                     echo '<option value="'.'img/'.str_replace('.json','',$product).'/'.$file.'">'.$file.'</option>';
                     }
                 ?>
             </select>

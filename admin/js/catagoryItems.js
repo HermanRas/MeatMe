@@ -4,7 +4,7 @@ function updateIMG() {
     const imgURL = y[x].value;
 
     const itemPic = document.getElementById('itemPic');
-    itemPic.src = imgURL;
+    itemPic.src = '../' + imgURL;
 
 
 }
