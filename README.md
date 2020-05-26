@@ -67,6 +67,7 @@
 - DONE 2020-05-26 added Product update - save Function
 - DONE 2020-05-26 added Product update - add new Function
 - DONE 2020-05-26 added Product update - delete Function
+- DOME 2020-05-26 added Item Image Management - add and delete Function
 
 ## To-Do
 - NONE
