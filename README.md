@@ -65,6 +65,8 @@
 - DONE 2020-05-25 added admin history page
 - DONE 2020-05-26 added NEW DATA MODDEL FOR UPDATE
 - DONE 2020-05-26 added Product update - save Function
+- DONE 2020-05-26 added Product update - add new Function
+- DONE 2020-05-26 added Product update - delete Function
 
 ## To-Do
 - NONE

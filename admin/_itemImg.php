@@ -1,14 +1,18 @@
 <?php
 
-//////////////////////////////////////////////////////////////////////////////////
-// save new picture
-//////////////////////////////////////////////////////////////////////////////////
-
-if(isset($_POST['newPic'])){
-        echo "<h1> One Day this will Save your picture </h1>";
-        var_dump($_POST);
-        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> CANCEL </a>';
+if(isset($_POST['del'])){
+    $file_pointer = $_POST["pic"];  
+    // Use unlink() function to delete a file  
+    if (!unlink($file_pointer)) {  
+        echo ("$file_pointer cannot be deleted due to an error");  
+    }  
+    else {  
+        echo '<div class="container">';
+        echo "<h1> Item: Picture Removed</h1>";
+        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> DONE </a>';
+        echo '</div>';
         die;
+    }  
 }
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -62,10 +66,12 @@ echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
     <?php
         if(isset($_POST['product'])){
     ?>
-    <form method="POST">
+    <form method="POST" action="itemImg.php" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="newPic">Please select picture to upload</label>
-            <input type="file" class="form-control-file" name="newPic" id="newPic" onchange="form.submit()">
+            <label class="file-upload btn btn-primary" for="newPic">Please select picture to upload
+                <input type="file" class="form-control-file" name="newPic" id="newPic" onchange="form.submit()">
+                <input type="hidden" name="product" value="<?php echo $_POST['product']; ?>">
+            </label>
         </div>
     </form>
     <div class="row">
@@ -74,9 +80,12 @@ echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
             $files = array_diff(scandir('../img/'.str_replace('.json','',$product)), array('..', '.'));
             foreach ($files as $file) {
                 echo '<div class="col-3 p-3 my-2 itemImgBox">';
+                echo '<form class="h-100" method="POST">';
                 echo '<label class="itemImgLabel text-white">'.$file.'</label>';
                 echo '<img class="w-100 h-100 rounded" src="'.'../img/'.str_replace('.json','',$product).'/'.$file.'" alt="item picture" >';
-                echo '<a class="btn btn-primary form-control" href="?del='.str_replace('.json','',$product).'/'.$file.'" >DELETE</a>';
+                echo '<input hidden value="../img/'.str_replace('.json','',$product).'/'.$file.'" name="pic" />';
+                echo '<input type="submit" class="btn btn-primary form-control" name="del" value="DELETE" />';
+                echo '</form>';
                 echo '</div>';
             }
         }

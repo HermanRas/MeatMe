@@ -15,6 +15,8 @@ session_start();
 
     <!-- PageStart -->
     <main data-barba="container" data-barba-namespace="home">
+
+        <?php include_once('_upload.php'); ?>
         <?php include_once('_itemImg.php'); ?>
     </main>
     <!-- include Scipts -->

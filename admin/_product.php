@@ -181,7 +181,7 @@
                  foreach ($files as $file) {
                      echo '<option value="'.'../img/'.str_replace('.json','',$product).'/'.$file.'">'.$file.'</option>';
                     }
-                    ?>
+                ?>
             </select>
             <img class="rounded p-2" id="itemPic" width="250px" src="../<?php echo $item['IMG']; ?>" alt="item picture">
         </div>
