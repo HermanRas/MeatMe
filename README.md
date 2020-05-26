@@ -67,10 +67,11 @@
 - DONE 2020-05-26 added Product update - save Function
 - DONE 2020-05-26 added Product update - add new Function
 - DONE 2020-05-26 added Product update - delete Function
-- DOME 2020-05-26 added Item Image Management - add and delete Function
+- DONE 2020-05-26 added Item Image Management - add and delete Function
+- DONE 2020-05-26 Bug fix Path correction on update
 
 ## To-Do
-- NONE
+- fix path display on dropdown for current path eg: ../xxxxxx/picname.png  should only be picname.ext
 
 ## Look-At-Implementing
 - NONE
