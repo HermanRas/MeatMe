@@ -33,13 +33,15 @@
         $jsonfile = file_get_contents("../data/$product");
         $json_data = json_decode($jsonfile, true);
 
-        //Display Items
+        //add item to Items
         $json_data["items"][$update] = $item;
 
         // Save the data
         file_put_contents("../data/$product",json_encode($json_data));
+        echo '<div class="container">';
         echo "<h1> Item: ".$_POST['desc']." was UPDATED for Category: " .  str_replace(".json","",$_POST['product']) . "</h1>";
-        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> CANCEL </a>';
+        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> DONE </a>';
+        echo '</div>';
         die;
     }
 
@@ -47,16 +49,47 @@
 // Add Item
 ///////////////////////////////////////////////////////////////////////////////////
     if(isset($_POST['add'])){
-            $item = [];
-            $item['name'] = '';
-            $item['desc'] = '';
-            $item['IMG'] = '';
-            $item['Price p/kg'] = '';
-            $item['Portion Size'] = [['100'=>'100g']];
-            $item['minQTY'] = 0;
-            $item['maxQTY'] = 1000;
+       // set update defaults
+        $product = $_POST['product'];
+        $update = $_POST['update'];
+        
+        // build out portions size array
+        $size = [];
+        $list = trim($_POST['size']);
+        $list = explode("\n",$list);
+        $i =0;
+        foreach ($list as $value) {
+            $value = trim($value);
+            $value = explode("=",$value);
+            $size[$i] = ["$value[0]" => "$value[1]"];
+            $i++;
+        }
 
-            echo json_encode($item);
+        // build the updated item
+        $item = [];
+        $item['name'] = $_POST['name'];
+        $item['desc'] = $_POST['desc'];
+        $item['IMG'] = $_POST['img'];
+        $item['Price p/kg'] = (int)$_POST['price'];
+        $item['Portion Size'] = $size;
+        $item['minQTY'] = (int)$_POST['minQty'];
+        $item['maxQTY'] = (int)$_POST['maxQty'];
+        
+        // Load Items
+        $jsonfile = file_get_contents("../data/$product");
+        $json_data = json_decode($jsonfile, true);
+
+        //add item to Items
+        $count = count($json_data["items"]) + 1;
+        $json_data["items"][$count] = $item;
+
+        // Save the data
+        file_put_contents("../data/$product",json_encode($json_data));
+        echo '<div class="container">';
+        echo "<h1> Item: ".$_POST['desc']." was ADDED for Category: " .  str_replace(".json","",$_POST['product']) . "</h1>";
+        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> DONE </a>';
+        echo '</div>';
+        die;
     }
 
 
@@ -64,9 +97,23 @@
 // DELETE Item
 ///////////////////////////////////////////////////////////////////////////////////
     if(isset($_POST['delete'])){
-        echo "<h1> One Day this will delete your data </h1>";
-        var_dump($_POST);
-        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> CANCEL </a>';
+        // set update defaults
+        $product = $_POST['product'];
+        $update = $_POST['update'];
+        
+        // Load Items
+        $jsonfile = file_get_contents("../data/$product");
+        $json_data = json_decode($jsonfile, true);
+
+        //Display Items
+        array_splice($json_data["items"],$update,1);
+
+        // Save the data
+        file_put_contents("../data/$product",json_encode($json_data));
+        echo '<div class="container">';
+        echo "<h1> Item: ".$_POST['desc']." was DELETED for Category: " .  str_replace(".json","",$_POST['product']) . "</h1>";
+        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> DONE </a>';
+        echo '</div>';
         die;
     }
 
@@ -95,7 +142,8 @@
         }else{
             $i = '';
             $item = [];
-            $item['name'] = '';
+            
+            $item['name'] =  strtoupper(str_replace(".json","",$_POST['product'])) .':Item Name Here';
             $item['desc'] = '';
             $item['IMG'] = '';
             $item['Price p/kg'] = '';

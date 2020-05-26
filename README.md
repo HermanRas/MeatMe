@@ -63,6 +63,8 @@
 - DONE 2020-05-25 added image upload for products / items
 - DONE 2020-05-25 added admin orders active page
 - DONE 2020-05-25 added admin history page
+- DONE 2020-05-26 added NEW DATA MODDEL FOR UPDATE
+- DONE 2020-05-26 added Product update - save Function
 
 ## To-Do
 - NONE
