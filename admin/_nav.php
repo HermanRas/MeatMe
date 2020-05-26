@@ -51,7 +51,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="products.php">Edit Products</a>
-                    <a class="dropdown-item" href="itemIMG.php">Edit Pictures</a>
+                    <a class="dropdown-item" href="itemImg.php">Edit Pictures</a>
                 </div>
             </li>
         </ul>

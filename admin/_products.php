@@ -42,7 +42,8 @@ echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
                 </div>
                 <div class="col-12 col-md-6">
                     <!-- begin item select -->
-                    <select class="form-control form-control-lg" name="item" id="item" onchange="form.submit();">
+                    <select class="form-control form-control-lg" name="item" id="item" onchange="form.submit();"
+                        required>
                         <option value="">Select Item</option>
                     </select>
                     <!-- end item select -->

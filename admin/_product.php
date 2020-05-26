@@ -3,8 +3,42 @@
 // Edit Item
 ///////////////////////////////////////////////////////////////////////////////////
     if(isset($_POST['save'])){
-        echo "<h1> One Day this will edit your data </h1>";
-        var_dump($_POST);
+        // set update defaults
+        $product = $_POST['product'];
+        $update = $_POST['update'];
+        
+        // build out portions size array
+        $size = [];
+        $list = trim($_POST['size']);
+        $list = explode("\n",$list);
+        $i =0;
+        foreach ($list as $value) {
+            $value = trim($value);
+            $value = explode("=",$value);
+            $size[$i] = ["$value[0]" => "$value[1]"];
+            $i++;
+        }
+
+        // build the updated item
+        $item = [];
+        $item['name'] = $_POST['name'];
+        $item['desc'] = $_POST['desc'];
+        $item['IMG'] = $_POST['img'];
+        $item['Price p/kg'] = (int)$_POST['price'];
+        $item['Portion Size'] = $size;
+        $item['minQTY'] = (int)$_POST['minQty'];
+        $item['maxQTY'] = (int)$_POST['maxQty'];
+        
+        // Load Items
+        $jsonfile = file_get_contents("../data/$product");
+        $json_data = json_decode($jsonfile, true);
+
+        //Display Items
+        $json_data["items"][$update] = $item;
+
+        // Save the data
+        file_put_contents("../data/$product",json_encode($json_data));
+        echo "<h1> Item: ".$_POST['desc']." was UPDATED for Category: " .  str_replace(".json","",$_POST['product']) . "</h1>";
         echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> CANCEL </a>';
         die;
     }
@@ -13,10 +47,16 @@
 // Add Item
 ///////////////////////////////////////////////////////////////////////////////////
     if(isset($_POST['add'])){
-        echo "<h1> One Day this will add your data </h1>";
-        var_dump($_POST);
-        echo '<a href="home.php" class="btn btn-lg btn-primary w-100"> CANCEL </a>';
-        die;
+            $item = [];
+            $item['name'] = '';
+            $item['desc'] = '';
+            $item['IMG'] = '';
+            $item['Price p/kg'] = '';
+            $item['Portion Size'] = [['100'=>'100g']];
+            $item['minQTY'] = 0;
+            $item['maxQTY'] = 1000;
+
+            echo json_encode($item);
     }
 
 
