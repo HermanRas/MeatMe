@@ -63,7 +63,8 @@
                                     <div class="input-group-text">QTY:</div>
                                 </div>
                                 <input type="number" class="form-control" id="<?php echo $item["name"]; ?>Qty"
-                                    placeholder="0" required>
+                                    placeholder="0" min="<?php echo $item["minQTY"]; ?>"
+                                    max="<?php echo $item["maxQTY"]; ?>" required>
                             </div>
                         </div>
 
