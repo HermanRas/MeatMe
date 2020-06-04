@@ -8,7 +8,7 @@ if (!empty($_FILES["newPic"])) {
     $myFile = $_FILES["newPic"];
     $size =  $_FILES["newPic"]["size"];
     if ($myFile["error"] !== UPLOAD_ERR_OK) {
-        echo "<p>An error occurred.</p>";
+        echo "<p>An error occurred check size .</p>";
         exit;
     }
 
