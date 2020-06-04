@@ -4,7 +4,7 @@
             "name": "VENISON:BOEREWORS",
             "desc": "BOEREWORS",
             "IMG": "img/venison/WILDSWORS.jpg",
-            "Price p/kg": 500,
+            "Price p\/kg": 500,
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -20,7 +20,7 @@
             "name": "VENISON:CURRY KEBABS",
             "desc": "CURRY KEBABS",
             "IMG": "img/venison/CURRY-SOSATIES.jpg",
-            "Price p/kg": 500,
+            "Price p\/kg": 500,
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -36,7 +36,7 @@
             "name": "VENISON:STEWING",
             "desc": "STEWING",
             "IMG": "img/venison/400x400.png",
-            "Price p/kg": 500,
+            "Price p\/kg": 500,
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -52,7 +52,7 @@
             "name": "VENISON:POTJIE",
             "desc": "POTJIE",
             "IMG": "img/venison/400x400.png",
-            "Price p/kg": 500,
+            "Price p\/kg": 500,
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -68,7 +68,7 @@
             "name": "VENISON:PATTIES",
             "desc": "PATTIES",
             "IMG": "img/venison/VENISON-PATTIES.jpg",
-            "Price p/kg": 500,
+            "Price p\/kg": 500,
             "Portion Size": [
                 {
                     "1200": "6 Patties"
@@ -81,7 +81,7 @@
             "name": "VENISON:MINCE",
             "desc": "MINCE",
             "IMG": "img/venison/Venison-Mince.jpg",
-            "Price p/kg": 500,
+            "Price p\/kg": 500,
             "Portion Size": [
                 {
                     "500": "1 x 500g"
