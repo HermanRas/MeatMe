@@ -3,11 +3,11 @@
         {
             "name": "LAMB:WHOLE LAMB",
             "desc": "WHOLE LAMB",
-            "IMG": "img/lamb/WHOLE_HALF-LAMB.png",
+            "IMG": "img\/lamb\/WHOLE_HALF-LAMB.png",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -23,11 +23,11 @@
         {
             "name": "LAMB:LOIN CHOPS",
             "desc": "LOIN CHOPS",
-            "IMG": "img/lamb/LAM-LOIN-CHOP.jpg",
+            "IMG": "img\/lamb\/LAM-LOIN-CHOP.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -40,11 +40,11 @@
         {
             "name": "LAMB:LAMB SHANK",
             "desc": "LAMB SHANK",
-            "IMG": "img/lamb/LAMB-SHANK.jpg",
+            "IMG": "img\/lamb\/LAMB-SHANK.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -57,11 +57,11 @@
         {
             "name": "LAMB:LAMB BRAAI CHOPS",
             "desc": "LAMB BRAAI CHOPS",
-            "IMG": "img/lamb/LAMB-BRAAI-CHOPS.jpg",
+            "IMG": "img\/lamb\/LAMB-BRAAI-CHOPS.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -74,11 +74,11 @@
         {
             "name": "LAMB:LAMB RIB",
             "desc": "LAMB RIB",
-            "IMG": "img/lamb/LAMB-RIB.jpg",
+            "IMG": "img\/lamb\/LAMB-RIB.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -91,11 +91,11 @@
         {
             "name": "LAMB:LEG OF LAMB",
             "desc": "LEG OF LAMB",
-            "IMG": "img/lamb/LEG-OF-LAMB.jpg",
+            "IMG": "img\/lamb\/LEG-OF-LAMB.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -108,11 +108,11 @@
         {
             "name": "LAMB:POTJIE",
             "desc": "POTJIE",
-            "IMG": "img/lamb/LAMB-POTJIE.jpg",
+            "IMG": "img\/lamb\/LAMB-POTJIE.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
@@ -128,11 +128,11 @@
         {
             "name": "LAMB:LAMB NECK",
             "desc": "LAMB NECK",
-            "IMG": "img/lamb/lamb-neck.jpg",
+            "IMG": "img\/lamb\/lamb-neck.jpg",
             "Price p\/kg": 500,
             "PortionPack": [
                 "1000",
-                "p/Kg"
+                "p\/Kg"
             ],
             "Portion Size": [
                 {
