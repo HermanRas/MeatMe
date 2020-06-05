@@ -24,6 +24,7 @@
         $item['name'] = $_POST['name'];
         $item['desc'] = $_POST['desc'];
         $item['IMG'] = $_POST['img'];
+        $item['PortionPack'] = [explode(",",$_POST['PortionPack'])[0],explode(",",$_POST['PortionPack'])[1]];
         $item['Price p/kg'] = (int)$_POST['price'];
         $item['Portion Size'] = $size;
         $item['minQTY'] = (int)$_POST['minQty'];
@@ -70,6 +71,7 @@
         $item['name'] = $_POST['name'];
         $item['desc'] = $_POST['desc'];
         $item['IMG'] = $_POST['img'];
+        $item['PortionPack'] = [explode(",",$_POST['PortionPack'])[0],explode(",",$_POST['PortionPack'])[1]];
         $item['Price p/kg'] = (int)$_POST['price'];
         $item['Portion Size'] = $size;
         $item['minQTY'] = (int)$_POST['minQty'];
@@ -147,6 +149,7 @@
             $item['desc'] = '';
             $item['IMG'] = '';
             $item['Price p/kg'] = '';
+            $item['PortionPack'] = ["1000","p/Kg"];
             $item['Portion Size'] = [['100'=>'100g']];
             $item['minQTY'] = 0;
             $item['maxQTY'] = 1000;
@@ -184,6 +187,18 @@
                 ?>
             </select>
             <img class="rounded p-2" id="itemPic" width="250px" src="../<?php echo $item['IMG']; ?>" alt="item picture">
+        </div>
+        <div class="form-group">
+            <label for="price">Per Packing</label>
+            <select required class="form-control" id="PortionPack" name="PortionPack">
+                <option value="<?php echo $item['PortionPack'][0].",".$item['PortionPack'][1]; ?>" selected>
+                    <?php echo $item['PortionPack'][1]; ?>
+                </option>
+                <option value="1000,p/Kg">p/Kg</option>
+                <option value="1,p/Gram">p/Gram</option>
+                <option value="1,p/Item">p/Item</option>
+                <option value="6,p/Box (x6)">p/Box (x6)</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="price">Price Per Kg</label>

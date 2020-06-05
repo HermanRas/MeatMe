@@ -31,7 +31,7 @@
                         <div class="col-auto">
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">Price p/kg</div>
+                                    <div class="input-group-text"><?php echo $item["PortionPack"][1]; ?></div>
                                 </div>
                                 <input type="text" class="form-control" id="<?php echo $item["name"]; ?>Price"
                                     value="<?php echo "R " . $item["Price p/kg"]; ?>" readonly>
