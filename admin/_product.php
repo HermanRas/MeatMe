@@ -25,7 +25,7 @@
         $item['desc'] = $_POST['desc'];
         $item['IMG'] = $_POST['img'];
         $item['PortionPack'] = [explode(",",$_POST['PortionPack'])[0],explode(",",$_POST['PortionPack'])[1]];
-        $item['Price p/kg'] = (int)$_POST['price'];
+        $item['Price p/kg'] = (float)$_POST['price'];
         $item['Portion Size'] = $size;
         $item['minQTY'] = (int)$_POST['minQty'];
         $item['maxQTY'] = (int)$_POST['maxQty'];
@@ -72,7 +72,7 @@
         $item['desc'] = $_POST['desc'];
         $item['IMG'] = $_POST['img'];
         $item['PortionPack'] = [explode(",",$_POST['PortionPack'])[0],explode(",",$_POST['PortionPack'])[1]];
-        $item['Price p/kg'] = (int)$_POST['price'];
+        $item['Price p/kg'] = (float)$_POST['price'];
         $item['Portion Size'] = $size;
         $item['minQTY'] = (int)$_POST['minQty'];
         $item['maxQTY'] = (int)$_POST['maxQty'];
@@ -202,7 +202,7 @@
         </div>
         <div class="form-group">
             <label for="price">Price Per Kg</label>
-            <input required type="text" class="form-control" id="price" name="price"
+            <input required type="number" class="form-control" step="0.01" min="0" id="price" name="price"
                 value="<?php echo $item['Price p/kg']; ?>">
         </div>
         <div class="form-group">
