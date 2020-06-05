@@ -130,7 +130,7 @@ function pageCart() {
 
         // lookup the item in storeData
         const index = storeData.map(e => e.name).indexOf(cartItem[0].name);
-        const itemPrice = (cartItem[0].qnt * cartItem[0].portionValue / 1000) * storeData[index]['Price p\/kg'];
+        const itemPrice = (cartItem[0].qnt * cartItem[0].portionValue / storeData[index]['PortionPack'][0]) * storeData[index]['Price p\/kg'];
         priceTotal += itemPrice;
         const itemIMG = storeData[index]['IMG'];
         const itemDesc = storeData[index]['desc'];
