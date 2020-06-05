@@ -69,9 +69,14 @@
 - DONE 2020-05-26 added Product update - delete Function
 - DONE 2020-05-26 added Item Image Management - add and delete Function
 - DONE 2020-05-26 Bug fix Path correction on update
+- DONE 2020-06-04 Added detailed description on file upload error
+- DONE 2020-06-04 funny bug with duplicate name // added to do for protection
+- DONE 2020-06-05 update data model to support per item and per kg / per pack
+- DONE 2020-06-05 updated price to support decimal
+
 
 ## To-Do
-- fix path display on dropdown for current path eg: ../xxxxxx/picname.png  should only be picname.ext
+- protect against duplicate entries
 
 ## Look-At-Implementing
 - NONE
