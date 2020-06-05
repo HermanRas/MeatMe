@@ -5,6 +5,10 @@
             "desc": "BOEREWORS",
             "IMG": "img/venison/WILDSWORS.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -21,6 +25,10 @@
             "desc": "CURRY KEBABS",
             "IMG": "img/venison/CURRY-SOSATIES.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -37,6 +45,10 @@
             "desc": "STEWING",
             "IMG": "img/venison/400x400.png",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -53,6 +65,10 @@
             "desc": "POTJIE",
             "IMG": "img/venison/400x400.png",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "1 x 500g"
@@ -69,6 +85,10 @@
             "desc": "PATTIES",
             "IMG": "img/venison/VENISON-PATTIES.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1200": "6 Patties"
@@ -82,6 +102,10 @@
             "desc": "MINCE",
             "IMG": "img/venison/Venison-Mince.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "1 x 500g"

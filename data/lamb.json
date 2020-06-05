@@ -5,6 +5,10 @@
             "desc": "WHOLE LAMB",
             "IMG": "img/lamb/WHOLE_HALF-LAMB.png",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "10500": "HALF LAMB"
@@ -21,6 +25,10 @@
             "desc": "LOIN CHOPS",
             "IMG": "img/lamb/LAM-LOIN-CHOP.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1200": "6 x Chops"
@@ -34,6 +42,10 @@
             "desc": "LAMB SHANK",
             "IMG": "img/lamb/LAMB-SHANK.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "600": "2 per Pack"
@@ -47,6 +59,10 @@
             "desc": "LAMB BRAAI CHOPS",
             "IMG": "img/lamb/LAMB-BRAAI-CHOPS.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1200": "6 x Chops"
@@ -60,6 +76,10 @@
             "desc": "LAMB RIB",
             "IMG": "img/lamb/LAMB-RIB.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "600": "600g"
@@ -73,6 +93,10 @@
             "desc": "LEG OF LAMB",
             "IMG": "img/lamb/LEG-OF-LAMB.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "800": "800g"
@@ -86,6 +110,10 @@
             "desc": "POTJIE",
             "IMG": "img/lamb/LAMB-POTJIE.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"
@@ -102,6 +130,10 @@
             "desc": "LAMB NECK",
             "IMG": "img/lamb/lamb-neck.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"

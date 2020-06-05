@@ -5,6 +5,10 @@
             "desc": "BEEF BILTONG",
             "IMG": "img/biltong/B-BILTONG.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"
@@ -21,6 +25,10 @@
             "desc": "BEEF CHILLIE BITES",
             "IMG": "img/biltong/CHILLIEBITES.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"
@@ -37,6 +45,10 @@
             "desc": "Venison Biltong",
             "IMG": "img/biltong/V-BILTONG.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1500": "1.5kg"
@@ -53,6 +65,10 @@
             "desc": "Beef Droëwors",
             "IMG": "img/biltong/droewors.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"
@@ -69,6 +85,10 @@
             "desc": "Venison Droëwors",
             "IMG": "img/biltong/Venison-Doewors.jpg",
             "Price p\/kg": 500,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"

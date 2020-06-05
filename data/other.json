@@ -5,6 +5,10 @@
             "desc": "VENISON PIE",
             "IMG": "img\/other\/Venison_Pies_2.jpg",
             "Price p\/kg": 18,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "200": "200g"
@@ -18,6 +22,10 @@
             "desc": "BEEF LASAGNE",
             "IMG": "img\/other\/LASAGNE001.png",
             "Price p\/kg": 180,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1300": "1.3kg"
@@ -31,6 +39,10 @@
             "desc": "MACARONI & CHEESE",
             "IMG": "img\/other\/VENISON_LASAGNE.jpg",
             "Price p\/kg": 157,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1200": "1.2Kg"
@@ -44,6 +56,10 @@
             "desc": "BOBOTIE",
             "IMG": "img\/other\/Venison_Bobotie.jpg",
             "Price p\/kg": 180,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "1200": "1.2kg"
@@ -57,6 +73,10 @@
             "desc": "VENISON LASAGNE",
             "IMG": "img\/other\/VENISON_LASAGNE.jpg",
             "Price p\/kg": 180,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "500": "500g"
@@ -76,6 +96,10 @@
             "desc": "SAUSAGE ROLLS",
             "IMG": "img\/other\/VENISONSAUSAGEROLLS.jpg",
             "Price p\/kg": 18,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "200": "200g"
@@ -89,6 +113,10 @@
             "desc": "CHICKEN PIE",
             "IMG": "img\/other\/CHICKEN_PIE.jpg",
             "Price p\/kg": 18,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "100": "100g"
@@ -102,6 +130,10 @@
             "desc": "SPARE RIB PIE",
             "IMG": "",
             "Price p\/kg": 18,
+            "PortionPack": [
+                "1000",
+                "p/Kg"
+            ],
             "Portion Size": [
                 {
                     "200": "200g"
