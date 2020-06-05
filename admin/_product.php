@@ -81,8 +81,19 @@
         $jsonfile = file_get_contents("../data/$product");
         $json_data = json_decode($jsonfile, true);
 
+        // checkDupe
+            $i = 0;
+            foreach ($json_data['items'] as $value) {
+                if($value['name'] === $item['name']){
+                    $item = $value;
+                break;
+                }
+            $i++;
+            }
+
         //add item to Items
-        $count = count($json_data["items"]) + 1;
+        $count = $i;
+        var_dump($count);
         $json_data["items"][$count] = $item;
 
         // Save the data
