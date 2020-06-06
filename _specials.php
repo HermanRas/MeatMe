@@ -1,5 +1,5 @@
 <?php
-// Load all Json files and Remove .. & . files
+// Load all Img files and Remove .. & . files
     $files = array_diff(scandir('img/Special'), array('..', '.'));
 ?>
 <!-- PageStart -->
@@ -13,8 +13,9 @@
             foreach ($files as $file) {
             ?>
             <div class="col-12 col-md-6 text-center">
-                <a href="#" class="btn btn-outline-secondary"><img class="img-fluid"
-                        src="img/Special/<?php echo $file ;?>" class="rounded main-ico"></a>
+                <a href="#" class="btn btn-outline-secondary" style="min-width:100%;"><img class="img-fluid"
+                        style="min-width:100%; min-height:100%;" src="img/Special/<?php echo $file ;?>"
+                        class="rounded main-ico"></a>
             </div>
             <?php
             }
