@@ -22,22 +22,22 @@ if(isset($_POST['del'])){
 // Load all Json files and Remove .. & . files
 $files = array_diff(scandir('../data'), array('..', '.'));
 
-$dataSet = [];
-// loop thru all data files loading items
-foreach ($files as $file) {
-    $dataSet[$file] = [];
-    $jsonfile = file_get_contents("../data/$file");
-    $json_data = json_decode($jsonfile, true);
-    $localName = str_replace(".json","",$file);
+// $dataSet = [];
+// // loop thru all data files loading items
+// foreach ($files as $file) {
+//     $dataSet[$file] = [];
+//     $jsonfile = file_get_contents("../data/$file");
+//     $json_data = json_decode($jsonfile, true);
+//     $localName = str_replace(".json","",$file);
 
-    //Display Items
-    foreach ($json_data["items"] as $item) {
-        array_push($dataSet[$file],$item);
-    }
-}
-// Print all store Data
-$storeData = json_encode($dataSet);
-echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
+//     //Display Items
+//     foreach ($json_data["items"] as $item) {
+//         array_push($dataSet[$file],$item);
+//     }
+// }
+// // Print all store Data
+// $storeData = json_encode($dataSet);
+// echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
 ?>
 <div class="container mt-3">
     <h1 class="bg-secondary-dark rounded p-2 text-center">Products</h1>
@@ -54,7 +54,9 @@ echo "<script> const storeData = JSON.parse('$storeData'); </script>\n";
                                 $data = str_replace(".json","",$file);
                                 echo '<option value="'.$file.'">'.$data.'</option>';
                             }
-                        ?>
+                            ?>
+                    <option value="Special">Specials</option>
+                    <option value="Slider">Slider</option>
                 </select>
                 <!-- end category select -->
             </div>
