@@ -74,10 +74,16 @@
 - DONE 2020-06-05 update data model to support per item and per kg / per pack
 - DONE 2020-06-05 updated price to support decimal
 - DONE 2020-06-05 protect against duplicate entries when adding items
+- DONE 2020-06-06 add specials Picture update page
+- DONE 2020-06-06 add specials load from file so you can have as many as you like
+- DONE 2020-06-06 add Slider Picture Update Page
+- DONE 2020-06-06 add image size reminder on upload page
+- DONE 2020-06-06 BUG FIX menu item Typo
 
 ## To-Do
-- add specials page
-- add adds/banner page
+- Register for payment System
+- Collect Active/no completed data from Payment System
+- Collect Order History from Payment system
 
 ## Look-At-Implementing
 - NONE

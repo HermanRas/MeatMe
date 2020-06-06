@@ -13,10 +13,10 @@
             <a href="pork.php" class="btn btn-secondary main-ico-text">PORK</a>
         </div>
         <div class="col-6 col-md-4 text-center mt-2">
-            <a href="LAMB.php" class="btn btn-secondary main-ico-text">LAMB</a>
+            <a href="lamb.php" class="btn btn-secondary main-ico-text">LAMB</a>
         </div>
         <div class="col-6 col-md-4 text-center mt-2">
-            <a href="VENISON.php" class="btn btn-secondary main-ico-text">VENISON</a>
+            <a href="venison.php" class="btn btn-secondary main-ico-text">VENISON</a>
         </div>
         <div class="col-6 col-md-4 text-center mt-2">
             <a href="biltong.php" style="font-size: 1.5rem; padding-top: 2em;"
