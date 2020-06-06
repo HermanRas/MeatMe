@@ -67,6 +67,19 @@ $files = array_diff(scandir('../data'), array('..', '.'));
     <!-- Image Gallery -->
     <?php
         if(isset($_POST['product'])){
+            if($_POST['product']=="Special"){
+                // comment for specials
+                echo"<p> As many as you like (490px x 400px)</p>";
+            }else{
+                if($_POST['product']=="Slider"){
+                    // Comment for sliders
+                    echo'<p class="text-danger"> ONLY 3 MAX, the rest will be ignored ! (1920px x 500px)</p>';
+                }else{
+                    // comment for the rest
+                    echo"<p> As many as you like (400px x 400px)</p>";
+                }
+            }
+            
     ?>
     <form method="POST" action="itemImg.php" enctype="multipart/form-data">
         <div class="form-group">
