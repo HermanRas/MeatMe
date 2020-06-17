@@ -3,14 +3,16 @@
     src: url("font/Goshen.otf") format("opentype");
 }
 
+
+
 *{
     border-style: box;
-    font-family: "Goshen",sans-serif;
     padding: 0;
     border: 0;
 }
 
 body{
+    font-family: "Goshen",sans-serif;
     overflow-x: hidden !important ;
     background-color: rgb(250, 236, 219);
     color: #613916;

@@ -19,7 +19,7 @@
         </div>
         <br>
         <a class="btn  btn-primary" href="index.php">&lt; Back to Shopping</a>
-        <button type="button" class="btn btn-primary float-right"> Check Out </button>
+        <a class="btn  btn-primary float-right" href="order.php"> Check Out </a>
         <br>
         <hr>
     </div>
