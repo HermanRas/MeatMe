@@ -24,6 +24,14 @@
                         <input type="text" class="form-control" id="Phone" Name="Phone" placeholder="072 000 1234"
                             Required>
                     </div>
+                    <div class="form-group">
+                        <label for="orderType">Collect / Deliver:</label>
+                        <select class="form-control" name="orderType" id="orderType" onchange="getLocation()" required>
+                            <option value="">Please Select</option>
+                            <option vlaue="Deliver">Deliver</option>
+                            <option value="Collect">Collect</option>
+                        </select>
+                    </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="Terms & Conditions" Required>
                         <label class="form-check-label" for="exampleCheck1">I accept the <a href="terms.php"
@@ -50,3 +58,27 @@
         </div>
     </form>
 </main>
+<script>
+function getLocation() {
+
+    const e = document.getElementById("orderType");
+    const type = e.options[e.selectedIndex].value;
+    console.log(type);
+
+    if (type === 'Deliver') {
+        console.log('add input');
+
+        var input = document.createElement("input");
+        input.setAttribute("type", "text");
+        input.setAttribute("name", "location");
+        input.setAttribute("id", "location");
+        input.setAttribute("class", "form-control");
+        input.setAttribute("placeholder", "your address");
+        input.setAttribute("required", "required");
+        e.after(input);
+    } else {
+        const e = document.getElementById("location");
+        e.parentNode.removeChild(e);
+    }
+}
+</script>

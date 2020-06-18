@@ -132,10 +132,12 @@ function pageCart() {
         const index = storeData.map(e => e.name).indexOf(cartItem[0].name);
         const itemPrice = (cartItem[0].qnt * cartItem[0].portionValue / storeData[index]['PortionPack'][0]) * storeData[index]['Price p\/kg'];
         priceTotal += itemPrice;
+        const itemName = storeData[index]['name'];
         const itemIMG = storeData[index]['IMG'];
         const itemDesc = storeData[index]['desc'];
+        const itemWeight = cartItem[0].portionValue;
         const itemPortion = cartItem[0].portionText;
-        const itemGrams = cartItem[0].qnt;
+        const itemQnt = cartItem[0].qnt;
         const html = document.getElementById('cartData').innerHTML;
         // .toFixed(2)
         const listItem = `
@@ -144,14 +146,19 @@ function pageCart() {
                             <div class="col-12 col-md-4">
                                 <img style="width: 3rem;" class="rounded" src="`+ itemIMG + `" alt="` + itemDesc + `">
                                 <h5 class="ml-1 d-inline text-uppercase">` + itemDesc + `</h5>
+                                <input type="hidden" value="`+ itemName + `" name="itemName[]" >
+                                <input type="hidden" value="`+ itemDesc + `" name="itemDesc[]" >
+                                <input type="hidden" value="`+ itemWeight + `" name="itemWeight[]" >
                             </div>
                             <div class="col-12 col-md-2">
                                 <strong>Portion: </strong>` + itemPortion + `
+                                <input type="hidden" value="`+ itemPortion + `" name="itemPortion[]" >
                             </div>
                             <div class="col-12 col-md-2">
-                               <strong>Quantity: </strong> ` + itemGrams + `
-                            </div>
-                            <div class="col-12 col-md-3">
+                               <strong>Quantity: </strong> ` + itemQnt + `
+                               <input type="hidden" value="`+ itemQnt + `" name="itemQuantity[]" >
+                               </div>
+                               <div class="col-12 col-md-3">
                                <strong>Price: </strong><div class="d-inline" id="price">` + formatter.format(itemPrice) + `</div>
                             </div>
                             <div class="col-12 col-md-1 text-right">

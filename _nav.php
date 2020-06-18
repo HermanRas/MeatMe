@@ -34,9 +34,12 @@
                 <a class="nav-link" href="specials.php">Specials</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="orderStatus.php">Order Tracking</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact Us</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Orders
@@ -45,7 +48,7 @@
                     <a class="dropdown-item" href="#">Order History</a>
                     <a class="dropdown-item" href="#">Active Orders</a>
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </nav>
