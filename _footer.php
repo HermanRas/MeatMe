@@ -4,4 +4,6 @@
     <a class="btn btn-dark p-1"><i class="text-white display-4 fab fa-pinterest-square"></i></a>
     <a class="btn btn-dark p-1"><i class="text-white display-4 fab fa-twitter-square"></i></a>
     <a class="btn btn-dark p-1"><i class="text-white display-4 fab fa-linkedin"></i></a>
+    <br>
+    <small class="text-white">&copy; by www.dragoon.co.za 2020</small>
 </div>
