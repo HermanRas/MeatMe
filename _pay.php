@@ -22,9 +22,11 @@
                 foreach ($_GET["productLog"] as $orderItem) {
                     $orderToFile = $orderToFile . $orderItem;
                 }
-                $orderToFile = $orderToFile . "\n\n" ."Email:".$_GET['Email']."\n";
-                $orderToFile = $orderToFile ."Phone:".$_GET['Phone']."\n";
-                $orderToFile = $orderToFile ."orderType:".$_GET['orderType']."\n";
+
+                $orderToFile = $orderToFile . "\n\n" ."Name:".$_GET['name']."\n";
+                $orderToFile = $orderToFile . "Email:".$_GET['Email']."\n";
+                $orderToFile = $orderToFile . "Phone:".$_GET['Phone']."\n";
+                $orderToFile = $orderToFile . "orderType:".$_GET['orderType']."\n";
                 if(isset($_GET['location'])){
                     $orderToFile = $orderToFile ."location:".$_GET['location']."\n";
                 }
@@ -52,10 +54,11 @@
         /////////////////////////////////////////////////////////////////////////////////////
         
         // if Cart was ready
-        if(isset($_POST["Email"]) && isset($_POST["Phone"])){
+        if(isset($_POST["Email"]) && isset($_POST["Phone"]) && isset($_POST["name"])){
             echo "<form>";
             // Load Server Safe Prices and data
             include_once("_storeData.php");
+            echo '<input type="hidden" value="'.$_POST['name'].'" name="name">';
             echo '<input type="hidden" value="'.$_POST['Email'].'" name="Email">';
             echo '<input type="hidden" value="'.$_POST['Phone'].'" name="Phone">';
             echo '<input type="hidden" value="'.$_POST['orderType'].'" name="orderType">';

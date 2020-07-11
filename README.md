@@ -79,13 +79,15 @@
 - DONE 2020-06-06 add Slider Picture Update Page
 - DONE 2020-06-06 add image size reminder on upload page
 - DONE 2020-06-06 BUG FIX menu item Typo
+- DONE 2020-07-02 OZOW Register for payment System
+- DONE 2020-07-03 convert to DB system from Excel
+- DONE 2020-07-11 Add payment Details to Order
+- DONE 2020-07-11 add name to order data
 
 ## To-Do
-- Register for payment System
+- Integrate OZOW Endpoint
 - Collect Active/no completed data from Payment System
 - Collect Order History from Payment system
-- Add payment Details to Order
-- add name to order data
 
 ## Look-At-Implementing
-- NONE
+- EXCEL API for Admin Reporting

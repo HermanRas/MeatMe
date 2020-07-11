@@ -13,6 +13,11 @@
 
                 <div class="container pb-2">
                     <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" Name="name" aria-describedby="emailHelp"
+                            placeholder="Enter Your Name" Required>
+                    </div>
+                    <div class="form-group">
                         <label for="Email">Email address</label>
                         <input type="email" class="form-control" id="Email" Name="Email" aria-describedby="emailHelp"
                             placeholder="Enter email" Required>
