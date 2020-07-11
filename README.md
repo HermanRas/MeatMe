@@ -85,6 +85,7 @@
 - Collect Active/no completed data from Payment System
 - Collect Order History from Payment system
 - Add payment Details to Order
+- add name to order data
 
 ## Look-At-Implementing
 - NONE
