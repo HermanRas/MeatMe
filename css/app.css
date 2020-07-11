@@ -1,9 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: Goshen;
     src: url("font/Goshen.otf") format("opentype");
-}
-
-
+} */
 
 *{
     border-style: box;
@@ -12,7 +10,7 @@
 }
 
 body{
-    font-family: "Goshen",sans-serif;
+    /* font-family: "Goshen",sans-serif; */
     overflow-x: hidden !important ;
     background-color: rgb(250, 236, 219);
     color: #613916;

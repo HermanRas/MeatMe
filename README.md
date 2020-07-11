@@ -84,6 +84,7 @@
 - Register for payment System
 - Collect Active/no completed data from Payment System
 - Collect Order History from Payment system
+- Add payment Details to Order
 
 ## Look-At-Implementing
 - NONE

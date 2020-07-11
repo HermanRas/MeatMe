@@ -18,12 +18,19 @@
                 echo "<br><hr>";
                 echo '<a class="btn btn-primary" href="index.php">HOME</a>';
                 echo "<br><hr>";
-                echo "<script>window.localStorage.setItem('cart', JSON.stringify([]));</script>";
                 $orderToFile = "Name,PricePK,Qtn,Weight,Portion\n";
                 foreach ($_GET["productLog"] as $orderItem) {
                     $orderToFile = $orderToFile . $orderItem;
                 }
-                file_put_contents("Orders\QOD". $_GET['orderID'].".csv",$orderToFile);
+                $orderToFile = $orderToFile . "\n\n" ."Email:".$_GET['Email']."\n";
+                $orderToFile = $orderToFile ."Phone:".$_GET['Phone']."\n";
+                $orderToFile = $orderToFile ."orderType:".$_GET['orderType']."\n";
+                if(isset($_GET['location'])){
+                    $orderToFile = $orderToFile ."location:".$_GET['location']."\n";
+                }
+                
+                file_put_contents("Orders/QOD". $_GET['orderID'].".csv",$orderToFile);
+                echo "<script>window.localStorage.setItem('cart', JSON.stringify([]));</script>";
             }
             if(isset($_GET['ACTN'])){
                 // Oops, there was something wrong with your Payment
@@ -49,6 +56,11 @@
             echo "<form>";
             // Load Server Safe Prices and data
             include_once("_storeData.php");
+            echo '<input type="hidden" value="'.$_POST['Email'].'" name="Email">';
+            echo '<input type="hidden" value="'.$_POST['Phone'].'" name="Phone">';
+            echo '<input type="hidden" value="'.$_POST['orderType'].'" name="orderType">';
+            if(isset($_post['location'])){}
+            echo '<input type="hidden" value="'.$_POST['location'].'" name="location">';
             $i = 0;
             $totalPrice = 0;
             foreach ($_POST["itemName"] as $name) {
