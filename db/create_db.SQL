@@ -15,18 +15,40 @@ DELETE FROM tblename;
 VACUUM;
 **/
 
---create new tables
+/**
+////////////////////////////////////////////////
+// ORDERS AND PRODUCTS
+////////////////////////////////////////////////
+**/
 CREATE TABLE orders ( 
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	orderID TEXT NOT NULL,
 	name TEXT NOT NULL,
 	email TEXT NOT NULL,
 	phone TEXT NOT NULL,
-	date date NOT NULL,
+	payment BIT  NOT NULL,
+	date TEXT NOT NULL,
 	active BIT,
 	status BIT,
 	is_pickup BIT,
-	deliveraddress TEXT);
+	deliveraddress TEXT,
+	totalPrice TEXT);
 
+CREATE TABLE products ( 
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	description TEXT NOT NULL,
+	PricePK TEXT NOT NULL,
+	Qtn TEXT NOT NULL,
+	Weight TEXT NOT NULL,
+	Portion TEXT NOT NULL,
+	orders_id INTEGER NOT NULL);
+
+/**
+////////////////////////////////////////////////
+// ADMIN and ACCESS
+////////////////////////////////////////////////
+**/
 CREATE TABLE admins ( 
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
 	name TEXT NOT NULL,
@@ -40,6 +62,17 @@ CREATE TABLE access (
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	name TEXT NOT NULL,
 	description TEXT NOT NULL);
+
+INSERT INTO access ('name','description') VALUES ('agent', 'can do orders');
+INSERT INTO access ('name','description') VALUES (' ', 'N/A');
+INSERT INTO access ('name','description') VALUES (' ', 'N/A');
+INSERT INTO access ('name','description') VALUES (' ', 'N/A');
+INSERT INTO access ('name','description') VALUES ('product admin', 'can add & update orders');
+INSERT INTO access ('name','description') VALUES (' ', 'N/A');
+INSERT INTO access ('name','description') VALUES (' ', 'N/A');
+INSERT INTO access ('name','description') VALUES (' ', 'N/A');
+INSERT INTO access ('name','description') VALUES ('system admin', 'can do everything');
+
 	/**
     1) agent orders access
     2)
@@ -51,22 +84,20 @@ CREATE TABLE access (
     8)
     9) Systeam admin - can do all
     **/
-INSERT INTO access ('name','description') VALUES ('agent', 'can do orders');
-INSERT INTO access ('name','description') VALUES (' ', 'N/A');
-INSERT INTO access ('name','description') VALUES (' ', 'N/A');
-INSERT INTO access ('name','description') VALUES (' ', 'N/A');
-INSERT INTO access ('name','description') VALUES ('product admin', 'can add & update orders');
-INSERT INTO access ('name','description') VALUES (' ', 'N/A');
-INSERT INTO access ('name','description') VALUES (' ', 'N/A');
-INSERT INTO access ('name','description') VALUES (' ', 'N/A');
-INSERT INTO access ('name','description') VALUES ('system admin', 'can do everything');
 
-CREATE TABLE products ( 
+/**
+////////////////////////////////////////////////
+// STATUS
+////////////////////////////////////////////////
+**/
+CREATE TABLE status ( 
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	name TEXT NOT NULL,
-	description TEXT NOT NULL,
-	PricePK TEXT NOT NULL,
-	Qtn TEXT NOT NULL,
-	Weight TEXT NOT NULL,
-	Portion TEXT NOT NULL,
-	orders_id INTEGER NOT NULL);
+	description TEXT NOT NULL);
+
+INSERT INTO status ('name','description') VALUES ('NEW', 'New order checking for payment');
+INSERT INTO status ('name','description') VALUES ('PAYED', 'Paid ready for processing');
+INSERT INTO status ('name','description') VALUES ('PROCESSING', 'Packing Order');
+INSERT INTO status ('name','description') VALUES ('READY', 'Ready for Pickup');
+INSERT INTO status ('name','description') VALUES ('SHIPED', 'Order Our for delivery');
+INSERT INTO status ('name','description') VALUES ('CANCELD', 'CANCELED N/A');

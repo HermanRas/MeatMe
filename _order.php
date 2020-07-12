@@ -1,6 +1,150 @@
+<?php
+// var_dump($_POST);
+// echo "<br><br>";
+
+if(isset($_POST['pay'])){
+    if(isset($_POST['pay'])){
+        // set save values
+        date_default_timezone_set('Africa/Harare');
+        $orderId = random_int(300000,499999);
+        $Name = '';
+        $Email = '';
+        $Phone = '';
+        $OrderType = '';
+        $Location = '';
+        $payment = 0;
+        $date = date('Y/m/d h:m:s');
+        $active = 1;
+        $status = 1;
+
+        // set save values;
+        $Name = $_POST['name'];
+        $Email = $_POST['Email'];
+        $Phone = $_POST['Phone'];
+        $OrderType = ($_POST['orderType'] == 'Deliver') ? 0 : 1;
+        if(isset($_POST['location'])){
+            $Location = $_POST['location'];
+        }
+
+        // insert SQL
+        $sql = "INSERT INTO [orders]
+            ([orderID]
+            ,[name]
+            ,[email]
+            ,[phone]
+            ,[payment]
+            ,[date]
+            ,[active]
+            ,[status]
+            ,[is_pickup]
+            ,[deliveraddress])
+        VALUES
+            ('$orderId'
+            ,'$Name'
+            ,'$Email'
+            ,'$Phone'
+            ,'$payment'
+            ,'$date'
+            ,'$active'
+            ,'$status'
+            ,'$OrderType'
+            ,'$Location');";
+
+        // DEBUG
+        // echo $sql;
+
+        // INSERT TO SQL
+        $sqlargs = array();
+        require_once 'config/db_query.php'; 
+        $AddOrder =  sqlQuery($sql,$sqlargs);
+
+        $sql = "SELECT id from [orders] ORDER BY [id] DESC limit 1";
+        $sqlargs = array();
+        require_once 'config/db_query.php'; 
+        $GetOrderID =  sqlQuery($sql,$sqlargs);
+
+        $GetOrderID = ($GetOrderID[0][0]['id']);
+
+        if(isset($_POST["itemName"])){}
+        $item = [];
+        $itemsCount = count($_POST["itemName"]);
+        
+        // Include latest store prices
+        require_once('_storeData.php');
+        $totalPrice = 0;
+        for ($i=0; $i < $itemsCount; $i++) { 
+            $name = $_POST["itemName"][$i];
+            // find item in store data
+            $itemIndex = null;
+            foreach($dataSet as $index) {
+                if ($name == $index['name']) {
+                    $itemIndex = $index;
+                    break;
+                }
+            }
+            
+            // add create item in order
+            $item[$i]['itemName'] = $_POST["itemName"][$i];
+            $item[$i]['itemDesc'] = $_POST["itemDesc"][$i];
+            $item[$i]['itemWeight'] = $_POST["itemWeight"][$i];
+            $item[$i]['itemPortion'] = $_POST["itemPortion"][$i];
+            $item[$i]['itemQuantity'] = $_POST["itemQuantity"][$i];
+            $item[$i]['itemPricePer'] = $itemIndex['Price p/kg'];
+            $item[$i]['itemQuantityPer'] = $itemIndex['PortionPack'][0];
+            
+            // const itemPrice = (cartItem[0].qnt * cartItem[0].portionValue / storeData[index]['PortionPack'][0]) * storeData[index]['Price p\/kg'];
+            // Calc Price
+            $price = ($item[$i]['itemQuantity'] * $item[$i]['itemWeight'] / $item[$i]['itemQuantityPer']) * $item[$i]['itemPricePer'];
+            $item[$i]['Price'] = $price;
+            $totalPrice += $price;
+
+            
+            // PrepArgs TO SQL
+            $itemName = $item[$i]['itemName'];
+            $itemDesc = $item[$i]['itemDesc'];
+            $itemPricePer = $item[$i]['itemPricePer'];
+            $itemQuantity = $item[$i]['itemQuantity'];
+            $itemWeight = $item[$i]['itemWeight'];
+            $itemPortion = $item[$i]['itemPortion'];
+
+            // add products to order in DB
+            $sql = "INSERT INTO [products]
+                ([name]
+                ,[description]
+                ,[PricePK]
+                ,[Qtn]
+                ,[Weight]
+                ,[Portion]
+                ,[orders_id])
+            VALUES
+                ('$itemName'
+                ,'$itemDesc'
+                ,'$itemPricePer'
+                ,'$itemQuantity'
+                ,'$itemWeight'
+                ,'$itemPortion'
+                ,'$GetOrderID');";
+
+            $sqlargs = array();
+            require_once 'config/db_query.php'; 
+            $AddProduct =  sqlQuery($sql,$sqlargs);
+        }
+        
+        // update order price
+        $sql = "UPDATE [orders] SET [totalPrice] = '$totalPrice' WHERE [id] = '$GetOrderID';";
+        $sqlargs = array();
+        require_once 'config/db_query.php'; 
+        $updatePrice =  sqlQuery($sql,$sqlargs);
+
+        die;
+        // echo "<script> window.localStorage.setItem('cart', JSON.stringify([]));</script>";
+    }
+}
+?>
+
 <!-- PageStart -->
 <main data-barba="container" data-barba-namespace="home">
-    <form action="pay.php" method="POST">
+    <form method="POST">
         <div class="container mt-3">
             <div class="card bg-primary">
                 <div class="card-header">
@@ -21,7 +165,8 @@
                         <label for="Email">Email address</label>
                         <input type="email" class="form-control" id="Email" Name="Email" aria-describedby="emailHelp"
                             placeholder="Enter email" Required>
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                            anyone
                             else.</small>
                     </div>
                     <div class="form-group">
@@ -56,13 +201,14 @@
                 </ul>
             </div>
             <br>
-            <a class="btn  btn-primary" href="index.php">&lt; Back to Shopping</a>
-            <button type="submit" class="btn btn-primary float-right">Let's Pay</button>
+            <a class="btn btn-primary" href="index.php">&lt; Back to Shopping</a>
+            <button type="submit" name="pay" class="btn btn-primary float-right">Let's Pay</button>
             <br>
             <hr>
         </div>
     </form>
 </main>
+
 <script>
 function getLocation() {
 
