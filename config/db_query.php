@@ -13,7 +13,7 @@ function sqlQuery($sql,$args){
         
         try {
                     $results = $stmt->fetchAll();
-                    $count = $stmt->rowCount();
+                    $count = count($results);
         } catch (\Throwable $th) {
                     //echo $th;
         }
