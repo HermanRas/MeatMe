@@ -19,10 +19,38 @@
         <hr>
         <?php
             if(isset($_GET["orderID"])){
-                if(file_exists("Orders/".$_GET['orderID'].".csv")){
+                $GetOrderID = $_GET["orderID"];
+                
+                // load order
+                $sql = "SELECT
+                        orders.orderID,
+                        orders.name,
+                        orders.email,
+                        orders.phone,
+                        orders.payment,
+                        orders.date,
+                        orders.active,
+                        orders.status,
+                        orders.is_pickup,
+                        orders.deliveraddress,
+                        orders.totalPrice,
+                        status.name As status_name,
+                        status.description As status_descr
+                        From
+                        orders Inner Join
+                        status On status.id = orders.status
+                        WHERE [orderID] = '$GetOrderID';";
+                $sqlargs = array();
+                require_once 'config/db_query.php'; 
+                $order =  sqlQuery($sql,$sqlargs);
+
+                $orderCount = $order[1];
+                $order = $order[0][0];
+
+                if($orderCount == 1){
                     echo "<h2>Your order was received</h2>";
-                    echo "<b> Latest News on your order:</b><br> Cutting a cow !";
-                    echo "<br><hr>";
+                    echo "<b> Latest News on your order:<br>";
+                    echo  $order["status_name"]."</b> - ".$order["status_descr"] . "<br><hr>";
                     echo '<a class="w-100 btn btn-primary" href="index.php">HOME</a>';
                     echo "<br><hr>";
                 }else{
