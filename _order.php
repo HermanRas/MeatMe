@@ -140,13 +140,22 @@ if(isset($_POST['pay'])){
         echo '
             <main data-barba="container" data-barba-namespace="home">
                 <div class="container mt-3">
-                    <h1 class="bg-secondary-dark rounded p-2">LAMB</h1>
+                    <h1 class="bg-secondary-dark rounded p-2">Order Create !</h1>
                     <div class="text-center">
                         <hr>
-                        <p class="text-dark"> Your order has been created your Order ID: '.$orderId.'</p>
-                        <a class="btn  btn-primary" href="https://pay.ozow.com/">
-                           Pay Via OZOW Online
-                        </a>
+                        <p class="text-dark"> Your order has been created, your Order ID: '.$orderId.'</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 p-3 bg-white rounded">
+                                <a class="btn  btn-success w-100" href="https://pay.ozow.com/">
+                                Pay Via OZOW Online
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-3 bg-white rounded">
+                                <a class="btn  btn-info w-100" href="pay.php?orderID='.$orderId.'&Val='.$totalPrice.'">
+                                Pay Via EFT
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>';
