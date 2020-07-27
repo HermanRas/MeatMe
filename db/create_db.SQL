@@ -29,7 +29,7 @@ CREATE TABLE orders (
 	payment BIT  NOT NULL,
 	date TEXT NOT NULL,
 	active BIT,
-	status BIT,
+	status INTEGER,
 	is_pickup BIT,
 	deliveraddress TEXT,
 	totalPrice TEXT);
