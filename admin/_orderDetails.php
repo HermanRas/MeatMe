@@ -23,7 +23,9 @@ if (isset($_GET["ID"])){
                 status On status.id = orders.status Inner Join
                 area On area.id = orders.area_id
             Where
-                orders.active = 1";
+                orders.active = 1
+                and
+                orders.id = $ID";
     $sqlargs = array();
     require_once 'config/db_query.php'; 
     $GetOrder =  sqlQuery($sql,$sqlargs);
@@ -205,3 +207,13 @@ if (isset($_GET["ID"])){
     </div>
     <br>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+function err() {
+    Swal.fire({
+        icon: 'info',
+        title: 'well...',
+        text: 'Herman is amper klaar hier!'
+    })
+}
+</script>
