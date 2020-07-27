@@ -6,7 +6,7 @@ if(isset($_POST['pay'])){
     if(isset($_POST['pay'])){
         // set save values
         date_default_timezone_set('Africa/Harare');
-        $orderId = random_int(300000,499999);
+        $orderId = "QOD".random_int(300000,499999);
         $Name = '';
         $Email = '';
         $Phone = '';
@@ -135,9 +135,21 @@ if(isset($_POST['pay'])){
         $sqlargs = array();
         require_once 'config/db_query.php'; 
         $updatePrice =  sqlQuery($sql,$sqlargs);
-
+        echo "<script> window.localStorage.setItem('cart', JSON.stringify([]));</script>";
+        echo '
+            <main data-barba="container" data-barba-namespace="home">
+                <div class="container mt-3">
+                    <h1 class="bg-secondary-dark rounded p-2">LAMB</h1>
+                    <div class="text-center">
+                        <hr>
+                        <p class="text-dark"> Your order has been created your Order ID: '.$orderId.'</p>
+                        <a class="btn  btn-primary" href="https://pay.ozow.com/">
+                           Pay Via OZOW Online
+                        </a>
+                    </div>
+                </div>
+            </main>';
         die;
-        // echo "<script> window.localStorage.setItem('cart', JSON.stringify([]));</script>";
     }
 }
 ?>
