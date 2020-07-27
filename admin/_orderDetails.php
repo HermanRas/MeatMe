@@ -124,7 +124,7 @@
             <b>Total:</b>
         </div>
         <div class="col-12 col-md-6">
-            <?=money_format("R %i",$GetOrder["totalPrice"])?>
+            <?='R'.sprintf('%01.2f', $GetOrder["totalPrice"])?>
         </div>
     </div>
     <hr>
@@ -159,7 +159,7 @@
             <b>PricePK:</b>
         </div>
         <div class="col-12 col-md-6">
-            <?=money_format("R %i",$item["PricePK"])?>
+            <?='R'.sprintf('%01.2f', $item["PricePK"])?>
         </div>
     </div>
     <div class="row">
