@@ -72,34 +72,26 @@
     foreach ($ProductsCount[0] as $rec) {
         array_push($Products["description"],$rec["description"]);
         array_push($Products["count"],(int)$rec["count"]);
- 
     }
     $Products =  json_encode($Products);
     echo '<script> let productsCount = '.$Products.'; </script>' ;
 
-/*
-Select
-  orders.active,
-  orders.orderID,
-  orders.name,
-  orders.email,
-  orders.phone,
-  orders.payment,
-  orders.date,
-  status.name || ' - ' || status.description As status,
-  orders.is_pickup,
-  orders.deliveraddress,
-  orders.totalPrice,
-  products.description,
-  products.PricePK,
-  products.Qtn,
-  products.Weight,
-  products.Portion
-From
-  orders Inner Join
-  status On status.id = orders.status Inner Join
-  products On orders.id = products.orders_id
-*/
+    // Top Clients Complete 
+    $sql = "SELECT 
+                name,
+                email,
+                count(totalPrice) as count
+            FROM orders
+                WHERE
+                payment = 1
+                GROUP BY
+                name, email
+            ORDER BY count DESC
+                limit 0,10";
+                
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $Clients =  sqlQuery($sql,$sqlargs);
 ?>
 <div class="container mt-3">
     <h1 class="bg-secondary-dark rounded p-2 text-center">QWEENS ONLINE DELI<br><small>Admin Dashboard</small></h1>
@@ -191,36 +183,28 @@ From
             <!-- Modules Completed Card Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">% Sale of each Item</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">TOP 10 Clients</h6>
                 </div>
                 <div class="card-body">
-                    <h4 class="small font-weight-bold">Beef Wors <span class="float-right">20%</span>
+                    <?php
+                    $total = 0;
+                    foreach ($Clients[0] as $rec) {
+                        $total += (int)$rec["count"];
+                    }
+                    foreach ($Clients[0] as $rec) {
+                        $percent = ((int)$rec["count"] / $total)*100
+                ?>
+                    <h4 class="small font-weight-bold">
+                        <?php echo '<a class="text-dark" href="mailto:'.$rec['email'].'">'. $rec["name"]." (".$rec["count"].")</a>";?><span
+                            class="float-right"><?=$percent?>%</span>
                     </h4>
                     <div class="progress mb-4">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20"
-                            aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: <?=$percent?>%"
+                            aria-valuenow="<?=$percent?>" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">Snake Patties <span class="float-right">40%</span></h4>
-                    <div class="progress mb-4">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h4 class="small font-weight-bold">Rabbit Stew <span class="float-right">60%</span></h4>
-                    <div class="progress mb-4">
-                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h4 class="small font-weight-bold">Billong <span class="float-right">80%</span></h4>
-                    <div class="progress mb-4">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h4 class="small font-weight-bold">Amper Dry-Wors <span class="float-right">100%</span>
-                    </h4>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                    <?php
+                    }
+                ?>
                 </div>
             </div>
         </div>
@@ -229,21 +213,7 @@ From
             <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Sales by Category</h6>
-                    <div class="dropdown no-arrow">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                            aria-labelledby="dropdownMenuLink">
-                            <div class="dropdown-header">Dropdown Header:</div>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+                    <h6 class="m-0 font-weight-bold text-primary">Top 5 Sales by Item</h6>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
@@ -251,14 +221,14 @@ From
                         <canvas id="myPieChart"></canvas>
                     </div>
                     <div class="mt-4 text-center small">
-                        <!-- labels: ["BEEF", "PORK", "VENISON", "BILTONG", "LAMB", "OTHER"], -->
-                        <!-- '#4e73df', '#1cc88a', '#36b9cc', '#cf9736', '#a138c7', '#c2c433' -->
+
+                        <!-- '#4e73df', '#28a745', '#36b9cc', '#ffc107', '#dc3545' -->
                         <span class="mr-2">
                             <i class="fas fa-circle" style="color:#4e73df;"></i>
                             <?=$ProductsCount[0][0]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#1cc88a;"></i>
+                            <i class="fas fa-circle" style="color:#28a745;"></i>
                             <?=$ProductsCount[0][1]["description"] ?>
                         </span>
                         <span class="mr-2">
@@ -266,11 +236,11 @@ From
                             <?=$ProductsCount[0][2]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#cf9736;"></i>
+                            <i class="fas fa-circle" style="color:#ffc107;"></i>
                             <?=$ProductsCount[0][3]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#a138c7;"></i>
+                            <i class="fas fa-circle" style="color:#dc3545;"></i>
                             <?=$ProductsCount[0][4]["description"] ?>
                         </span>
                     </div>
