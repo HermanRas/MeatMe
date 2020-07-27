@@ -1,0 +1,32 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add header -->
+    <?php include_once('_head.php'); ?>
+</head>
+
+<body data-barba="wrapper">
+    <!-- add Nav Bar -->
+    <?php include_once('_nav.php'); ?>
+
+    <!-- PageStart -->
+    <main data-barba="container" data-barba-namespace="home">
+        <?php include_once('_orderDetails.php'); ?>
+    </main>
+    <!-- include Scipts -->
+    <?php include_once('_script.php') ?>
+    <!-- page script -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTable').DataTable({
+            "scrollX": true
+        });
+    });
+    </script>
+</body>
+
+</html>

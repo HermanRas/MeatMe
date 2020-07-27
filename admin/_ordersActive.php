@@ -1,5 +1,6 @@
 <?php
     $sql = "SELECT
+            orders.id,
             orders.active,
             orders.orderID,
             orders.name,
@@ -64,7 +65,8 @@
                             foreach ($GetOrders[0] as $order) {
                         ?>
                         <tr>
-                            <td><?php echo $order["orderID"]; ?></td>
+                            <td><a href="orderDetails.php?ID=<?=$order["id"] ?>"><?php echo $order["orderID"]; ?><a>
+                            </td>
                             <td><?php echo $order["name"]; ?></td>
                             <td class="d-none d-lg-table-cell"><?php echo $order["email"]; ?></td>
                             <td class="d-none d-lg-table-cell"><?php echo $order["phone"]; ?></td>
