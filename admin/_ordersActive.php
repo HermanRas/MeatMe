@@ -1,22 +1,24 @@
 <?php
     $sql = "SELECT
-            orders.id,
-            orders.active,
-            orders.orderID,
-            orders.name,
-            orders.email,
-            orders.phone,
-            orders.payment,
-            orders.date,
-            status.name || ' - ' || status.description As status,
-            orders.is_pickup,
-            orders.deliveraddress,
-            orders.totalPrice
-            FROM
-            orders Inner Join
-            status On status.id = orders.status
-            WHERE
-            orders.active = 1";
+                orders.id,
+                orders.active,
+                orders.orderID,
+                orders.name,
+                orders.email,
+                orders.phone,
+                orders.payment,
+                orders.date,
+                status.name || ' - ' || status.description As status,
+                orders.is_pickup,
+                orders.deliveraddress,
+                orders.totalPrice,
+                area.name As area
+            From
+                orders Inner Join
+                status On status.id = orders.status Inner Join
+                area On area.id = orders.area_id
+            Where
+                orders.active = 1";
     $sqlargs = array();
     require_once 'config/db_query.php'; 
     $GetOrders =  sqlQuery($sql,$sqlargs);
@@ -44,6 +46,7 @@
                             <th class="d-none d-lg-table-cell">Pickup</th>
                             <th class="d-none d-lg-table-cell">Address</th>
                             <th class="d-none d-lg-table-cell">TotalPrice</th>
+                            <th class="d-none d-lg-table-cell">Area</th>
                         </tr>
                     </thead>
                     <tfoot>
@@ -58,6 +61,7 @@
                             <th class="d-none d-lg-table-cell">Pickup</th>
                             <th class="d-none d-lg-table-cell">Address</th>
                             <th class="d-none d-lg-table-cell">TotalPrice</th>
+                            <th class="d-none d-lg-table-cell">Area</th>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -78,6 +82,7 @@
                             </td>
                             <td class="d-none d-lg-table-cell"><?php echo $order["deliveraddress"]; ?></td>
                             <td class="d-none d-lg-table-cell"><?php echo $order["totalPrice"]; ?></td>
+                            <td class="d-none d-lg-table-cell"><?php echo $order["area"]; ?></td>
                         </tr>
                         <?php
                             }

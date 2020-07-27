@@ -4,11 +4,26 @@ if (isset($_GET["ID"])){
     $ID = (int)$_GET["ID"];
 }
     // Order
-    $sql = "SELECT * FROM 
-                orders
-            WHERE
-                id = $ID
-            limit 1;";
+    $sql = "SELECT
+                orders.id,
+                orders.active,
+                orders.orderID,
+                orders.name,
+                orders.email,
+                orders.phone,
+                orders.payment,
+                orders.date,
+                status.name || ' - ' || status.description As status,
+                orders.is_pickup,
+                orders.deliveraddress,
+                orders.totalPrice,
+                area.name || ' - ' || area.description As area
+            From
+                orders Inner Join
+                status On status.id = orders.status Inner Join
+                area On area.id = orders.area_id
+            Where
+                orders.active = 1";
     $sqlargs = array();
     require_once 'config/db_query.php'; 
     $GetOrder =  sqlQuery($sql,$sqlargs);
@@ -83,6 +98,14 @@ if (isset($_GET["ID"])){
         </div>
         <div class="col-12 col-md-6">
             <?=($GetOrder["is_pickup"]==0? "Yes":"No")?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <b>Area:</b>
+        </div>
+        <div class="col-12 col-md-6">
+            <?=$GetOrder["area"]?>
         </div>
     </div>
     <div class="row">
@@ -182,13 +205,3 @@ if (isset($_GET["ID"])){
     </div>
     <br>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script>
-function err() {
-    Swal.fire({
-        icon: 'info',
-        title: 'well...',
-        text: 'Herman is amper klaar hier!'
-    })
-}
-</script>

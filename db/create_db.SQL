@@ -31,6 +31,7 @@ CREATE TABLE orders (
 	active BIT,
 	status INTEGER,
 	is_pickup BIT,
+	area_id INTEGER,
 	deliveraddress TEXT,
 	totalPrice TEXT);
 
@@ -46,7 +47,7 @@ CREATE TABLE products (
 
 /**
 ////////////////////////////////////////////////
-// ADMIN and ACCESS
+// ADMIN and ACCESS and AREA
 ////////////////////////////////////////////////
 **/
 CREATE TABLE admins ( 
@@ -85,6 +86,15 @@ INSERT INTO access ('name','description') VALUES ('system admin', 'can do everyt
     9) Systeam admin - can do all
     **/
 
+CREATE TABLE area ( 
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	description TEXT NOT NULL);
+
+INSERT INTO area ('name','description') VALUES ('NORTH', 'PTA_NORTH,SKIETFONTEIN,RODEPLAAT,MONTANA');
+INSERT INTO area ('name','description') VALUES ('EAST', 'PTA_EAST,CULLINAN,RAYTON,BRONKHORSTSPRUIT');
+INSERT INTO area ('name','description') VALUES ('WEST', 'DANVIL,TUINE,GESINA');
+INSERT INTO area ('name','description') VALUES ('SOUTH', 'VELERIA,ROOI-HUIS-KRAAL,VALLALA,');
 /**
 ////////////////////////////////////////////////
 // STATUS
