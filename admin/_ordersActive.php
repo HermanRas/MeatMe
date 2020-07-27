@@ -85,7 +85,8 @@
                             <td class="d-none d-lg-table-cell"><?php echo ($order["is_pickup"] == 0 ?  "No" : "Yes"); ?>
                             </td>
                             <td class="d-none d-lg-table-cell"><?php echo $order["deliveraddress"]; ?></td>
-                            <td class="d-none d-lg-table-cell"><?php echo $order["totalPrice"]; ?></td>
+                            <td class="d-none d-lg-table-cell"><?php echo money_format("R %i", $order["totalPrice"]); ?>
+                            </td>
                             <td class="d-none d-lg-table-cell"><?php echo $order["area"]; ?></td>
                         </tr>
                         <?php

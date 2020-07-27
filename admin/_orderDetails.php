@@ -124,7 +124,7 @@
             <b>Total:</b>
         </div>
         <div class="col-12 col-md-6">
-            <?="R ".$GetOrder["totalPrice"]?>
+            <?=money_format("R %i",$GetOrder["totalPrice"])?>
         </div>
     </div>
     <hr>
@@ -159,7 +159,7 @@
             <b>PricePK:</b>
         </div>
         <div class="col-12 col-md-6">
-            <?=$item["PricePK"]?>
+            <?=money_format("R %i",$item["PricePK"])?>
         </div>
     </div>
     <div class="row">
