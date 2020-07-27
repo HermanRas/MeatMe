@@ -16,11 +16,13 @@ if(isset($_POST['pay'])){
         $date = date('Y/m/d h:m:s');
         $active = 1;
         $status = 1;
+        $area = 0;
 
         // set save values;
         $Name = $_POST['name'];
         $Email = $_POST['Email'];
         $Phone = $_POST['Phone'];
+        $area = $_POST['Area'];
         $OrderType = ($_POST['orderType'] == 'Deliver') ? 0 : 1;
         if(isset($_POST['location'])){
             $Location = $_POST['location'];
@@ -37,7 +39,8 @@ if(isset($_POST['pay'])){
             ,[active]
             ,[status]
             ,[is_pickup]
-            ,[deliveraddress])
+            ,[deliveraddress]
+            ,[area_id])
         VALUES
             ('$orderId'
             ,'$Name'
@@ -48,7 +51,8 @@ if(isset($_POST['pay'])){
             ,'$active'
             ,'$status'
             ,'$OrderType'
-            ,'$Location');";
+            ,'$Location'
+            ,'$area');";
 
         // DEBUG
         // echo $sql;
@@ -185,6 +189,26 @@ if(isset($_POST['pay'])){
                         <label for="Phone">Phone Number</label>
                         <input type="text" class="form-control" id="Phone" Name="Phone" placeholder="072 000 1234"
                             Required>
+                    </div>
+                    <?php
+                        // get Areas from DB
+                        $sql = "Select * from area;";
+                        $sqlargs = array();
+                        require_once 'config/db_query.php'; 
+                        $areas =  sqlQuery($sql,$sqlargs);
+                    ?>
+                    <div class="form-group">
+                        <label for="Area">Location / Area:</label>
+                        <select class="form-control" name="Area" id="Area" required>
+                            <option value="">Please Select</option>
+                            <?php
+                            foreach ($areas[0] as $area) {
+                                echo '<option value="'.$area['id'].'">'.$area['name'].' - '.$area["description"].'</option>';
+                            }
+                            
+                            
+                            ?>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="orderType">Collect / Deliver:</label>
