@@ -1,7 +1,4 @@
 <?php
-// var_dump($_POST);
-// echo "<br><br>";
-
 if(isset($_POST['pay'])){
     if(isset($_POST['pay'])){
         // set save values
