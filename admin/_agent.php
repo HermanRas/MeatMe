@@ -127,6 +127,8 @@ if (isset($_GET['notice'])){
         $resultFarm =  sqlQuery($sql,$sqlargs);
     ?>
     <form method="POST" id="frmAdd">
+        <h1 class="bg-secondary-dark rounded p-2 mt-1 text-center">New User:</h1>
+        <hr>
         <div class="form-group">
             <label for="userName">User Name:</label>
             <input type="text" class="form-control" value="" name="userName" id="userName" placeholder="Name">
