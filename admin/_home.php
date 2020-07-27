@@ -1,3 +1,106 @@
+<?php
+    // Orders This Year
+    $sql = "SELECT
+            Count(main.orders.id) As orders
+            From
+            orders Inner Join
+            status On status.id = orders.status
+            Where
+            orders.payment = 1 And
+            orders.date Like (StrfTime('%Y', 'now') || '%');";
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $CountOrdersY =  sqlQuery($sql,$sqlargs);
+    $CountOrdersY = $CountOrdersY[0][0]["orders"];
+
+    // Orders This Month
+    $sql = "SELECT
+            Count(main.orders.id) As orders
+            From
+            orders Inner Join
+            status On status.id = orders.status
+            Where
+            orders.payment = 1 And
+            orders.date Like (StrfTime('%Y', 'now') || '/' || StrfTime('%m', 'now') || '%');";
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $CountOrdersM =  sqlQuery($sql,$sqlargs);
+    $CountOrdersM = $CountOrdersM[0][0]["orders"];
+    
+    // Orders Pending
+    $sql = "SELECT
+            Count(main.orders.id) As orders
+            From
+            orders Inner Join
+            status On status.id = orders.status
+            Where
+            orders.payment = 0;";
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $CountPending =  sqlQuery($sql,$sqlargs);
+    $CountPending = $CountPending[0][0]["orders"];
+
+    // Orders Complete 
+    $sql = "SELECT
+            sum(totalPrice) as total
+            From orders
+            WHERE payment = 1";
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $CountPayment =  sqlQuery($sql,$sqlargs);
+    $CountPayment = $CountPayment[0][0]["total"];
+
+    // Sales by Product Items 
+    $sql = "SELECT
+                products.description,
+                Count(main.products.description) As count
+            From
+                orders Inner Join
+                status On status.id = orders.status Inner Join
+                products On orders.id = products.orders_id
+            Group By
+                products.description
+            Order By count DESC
+                limit 0,5;";
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $ProductsCount =  sqlQuery($sql,$sqlargs);
+    $Products = [];
+    $Products["description"] = [];
+    $Products["count"] = [];
+
+    foreach ($ProductsCount[0] as $rec) {
+        array_push($Products["description"],$rec["description"]);
+        array_push($Products["count"],(int)$rec["count"]);
+ 
+    }
+    $Products =  json_encode($Products);
+    echo '<script> let productsCount = '.$Products.'; </script>' ;
+
+/*
+Select
+  orders.active,
+  orders.orderID,
+  orders.name,
+  orders.email,
+  orders.phone,
+  orders.payment,
+  orders.date,
+  status.name || ' - ' || status.description As status,
+  orders.is_pickup,
+  orders.deliveraddress,
+  orders.totalPrice,
+  products.description,
+  products.PricePK,
+  products.Qtn,
+  products.Weight,
+  products.Portion
+From
+  orders Inner Join
+  status On status.id = orders.status Inner Join
+  products On orders.id = products.orders_id
+*/
+?>
 <div class="container mt-3">
     <h1 class="bg-secondary-dark rounded p-2 text-center">QWEENS ONLINE DELI<br><small>Admin Dashboard</small></h1>
     <!-- Content Row -->
@@ -11,7 +114,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                 Sales (Year)</div>
-                            <div class="h3 mb-0 font-weight-bold text-gray-800">743</div>
+                            <div class="h3 mb-0 font-weight-bold text-gray-800"><?=$CountOrdersY;?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -29,7 +132,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Sales (Month)</div>
-                            <div class="h3 mb-0 font-weight-bold text-gray-800">64</div>
+                            <div class="h3 mb-0 font-weight-bold text-gray-800"><?=$CountOrdersM;?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -45,17 +148,11 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Sales vs Target
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Sales
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">85%</div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress progress-sm mr-2">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%"
-                                            aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">R <?=$CountPayment;?></div>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +173,7 @@
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Orders Pending
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$CountPending?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -157,22 +254,24 @@
                         <!-- labels: ["BEEF", "PORK", "VENISON", "BILTONG", "LAMB", "OTHER"], -->
                         <!-- '#4e73df', '#1cc88a', '#36b9cc', '#cf9736', '#a138c7', '#c2c433' -->
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#4e73df;"></i> BEEF
+                            <i class="fas fa-circle" style="color:#4e73df;"></i>
+                            <?=$ProductsCount[0][0]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#1cc88a;"></i> PORK
+                            <i class="fas fa-circle" style="color:#1cc88a;"></i>
+                            <?=$ProductsCount[0][1]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#36b9cc;"></i> VENISON
+                            <i class="fas fa-circle" style="color:#36b9cc;"></i>
+                            <?=$ProductsCount[0][2]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#cf9736;"></i> BILTONG
+                            <i class="fas fa-circle" style="color:#cf9736;"></i>
+                            <?=$ProductsCount[0][3]["description"] ?>
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#a138c7;"></i> LAMB
-                        </span>
-                        <span class="mr-2">
-                            <i class="fas fa-circle" style="color:#c2c433;"></i> OTHER
+                            <i class="fas fa-circle" style="color:#a138c7;"></i>
+                            <?=$ProductsCount[0][4]["description"] ?>
                         </span>
                     </div>
                 </div>

@@ -2,16 +2,18 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
+console.log(productsCount['count']);
+
 // Pie Chart Example
 var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["BEEF", "PORK", "VENISON", "BILTONG", "LAMB", "OTHER"],
+        labels: productsCount['description'],
         datasets: [{
-            data: [55, 30, 15, 60, 10, 22],
-            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#cf9736', '#a138c7', '#c2c433'],
-            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#ab832c', '#792996', '#babd2b'],
+            data: productsCount['count'],
+            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#cf9736', '#a138c7'],
+            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#ab832c', '#792996'],
             hoverBorderColor: "rgba(234, 236, 244, 1)",
         }],
     },
