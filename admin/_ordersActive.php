@@ -1,4 +1,6 @@
 <?php
+    // set area filter 
+    $acl_area_id = (isset($_SESSION['area_id'])?$_SESSION['area_id']:'');
     $sql = "SELECT
                 orders.id,
                 orders.active,
@@ -18,7 +20,9 @@
                 status On status.id = orders.status Inner Join
                 area On area.id = orders.area_id
             Where
-                orders.active = 1";
+                orders.active = 1
+            AND 
+                area_id LIKE '$acl_area_id'";
     $sqlargs = array();
     require_once 'config/db_query.php'; 
     $GetOrders =  sqlQuery($sql,$sqlargs);

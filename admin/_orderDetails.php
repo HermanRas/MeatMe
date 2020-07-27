@@ -1,8 +1,7 @@
 <?php
-$ID = 0;
-if (isset($_GET["ID"])){
-    $ID = (int)$_GET["ID"];
-}
+    // set area filter 
+    $acl_area_id = (isset($_SESSION['area_id'])?$_SESSION['area_id']:'');
+    $ID = (isset($_GET["ID"]))?(int)$_GET["ID"]:0;
     // Order
     $sql = "SELECT
                 orders.id,
@@ -25,7 +24,9 @@ if (isset($_GET["ID"])){
             Where
                 orders.active = 1
                 and
-                orders.id = $ID";
+                orders.id = $ID
+                and
+                area.id LIKE '$acl_area_id'";
     $sqlargs = array();
     require_once 'config/db_query.php'; 
     $GetOrder =  sqlQuery($sql,$sqlargs);

@@ -17,11 +17,11 @@ if(isset($_POST['login']) && isset($_POST['password'])){
     if(count($result[0]) === 1){
         $_SESSION['user_id'] = $result[0][0]["id"];
         $_SESSION['user'] = $result[0][0]["name"];
-        $_SESSION['acl'] = $result[0][0]["user_level"];
+        $_SESSION['acl'] = (int)$result[0][0]["user_level"];
         if($_SESSION['acl'] === 9){
             $_SESSION['area_id'] = '%';
         }else{
-            $_SESSION['area_id'] = $result[0][0]["area_id"];
+            $_SESSION['area_id'] = (int)$result[0][0]["area_id"];
         }
         echo '<script>window.location.replace("home.php");</script>';
         die;
