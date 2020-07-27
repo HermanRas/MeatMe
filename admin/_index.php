@@ -1,9 +1,30 @@
 <?php
 if(isset($_POST['login']) && isset($_POST['password'])){
-    if($_POST['login'] === 'admin' && $_POST['password'] === "beef@pork"){
-        $_SESSION['user'] = 'admin';
-         echo '<script>window.location.replace("home.php");</script>';
-         die;
+    $user = $_POST['login'];
+    $pass = $_POST['password'];
+
+    $sql = "SELECT * FROM
+                admins
+            WHERE
+                name = '$user'
+            AND
+                password = '$pass'
+            limit 1;";
+    $sqlargs = array();
+    require_once 'config/db_query.php'; 
+    $result =  sqlQuery($sql,$sqlargs);
+
+    if(count($result[0]) === 1){
+        $_SESSION['user_id'] = $result[0][0]["id"];
+        $_SESSION['user'] = $result[0][0]["name"];
+        $_SESSION['acl'] = $result[0][0]["user_level"];
+        if($_SESSION['acl'] === 9){
+            $_SESSION['area_id'] = '%';
+        }else{
+            $_SESSION['area_id'] = $result[0][0]["area_id"];
+        }
+        echo '<script>window.location.replace("home.php");</script>';
+        die;
     }else{
         
         echo    '<!-- Page Script -->

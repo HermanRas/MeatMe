@@ -1,10 +1,6 @@
 <?php 
-    if(isset($_SESSION['user'])){
-        if ($_SESSION['user'] !== "admin"){
-            // not admin
-            echo '<script>window.location.replace("index.php");</script>';
-            die;
-        }
+    if(isset($_SESSION['user']) && isset($_SESSION['acl'])){
+        // User is logged in
     }else{
             // not logged in
             echo '<script>window.location.replace("index.php");</script>';
@@ -44,6 +40,9 @@
                     <a class="dropdown-item" href="ordersHistory.php">Order History</a>
                 </div>
             </li>
+            <?php
+            if($_SESSION["acl"] > 4){
+            ?>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -54,6 +53,10 @@
                     <a class="dropdown-item" href="itemImg.php">Edit Pictures</a>
                 </div>
             </li>
+            <?php
+            }
+            if($_SESSION["acl"] > 8){
+            ?>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -64,6 +67,9 @@
                     <a class="dropdown-item" href="area.php">Areas</a>
                 </div>
             </li>
+            <?php
+            }
+            ?>
         </ul>
     </div>
 </nav>
