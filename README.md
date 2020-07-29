@@ -88,6 +88,13 @@
 - Integrate OZOW Endpoint
 - Collect Active/no completed data from Payment System
 - Collect Order History from Payment system
+- EXCEL API for Admin Reporting
+- email triggers
+- email templates
+- pdf invoice on admin panel
+- pdf on status compete using order query for user
+- pdf invoice email on order complete
+
 
 ## Look-At-Implementing
-- EXCEL API for Admin Reporting
+- convert Specials from Pictures to Items
