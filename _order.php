@@ -244,7 +244,7 @@ if(isset($_POST['pay'])){
             </div>
             <br>
             <a class="btn btn-primary" href="index.php">&lt; Back to Shopping</a>
-            <button type="submit" name="pay" class="btn btn-primary float-right">Let's Pay</button>
+            <button type="submit" name="pay" class="btn btn-primary float-right">Confirm Order</button>
             <br>
             <hr>
         </div>
