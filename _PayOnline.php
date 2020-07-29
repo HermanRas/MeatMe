@@ -1,16 +1,27 @@
 <?php 
-require_once('config/db');
+$orderID = '';
+$val = '';
+
+if(isset($_GET['Val']) && isset($_GET['orderID'])){
+    $orderID = $_GET['orderID'];
+    $val = $_GET['Val'];
+}else{
+    echo  '{"error": "OrderFailed"}';
+    die;
+}
+
+require_once('config/db.php');
 
 $postData = array('SiteCode' => $siteCode,
                     'CountryCode' => 'ZA',
                     'CurrencyCode' => 'ZAR',
-                    'Amount' => 0.01,
-                    'TransactionReference' => 'QOD012345',
-                    'BankReference' => 'QueensOD-QOD012345',
-                    'CancelUrl' => 'http://test.i-pay.co.za/responsetest.php',
-                    'ErrorUrl' => 'http://test.i-pay.co.za/responsetest.php',
-                    'SuccessUrl' => 'http://test.i-pay.co.za/responsetest.php',
-                    'NotifyUrl' => 'http://test.i-pay.co.za/responsetest.php',
+                    'Amount' => $val,
+                    'TransactionReference' => $orderID,
+                    'BankReference' => 'QueensOD-'.$orderID,
+                    'CancelUrl' => 'https://dragoon.co.za/QweensOnlineDeli/notice.php?CANCEL',
+                    'ErrorUrl' => 'https://dragoon.co.za/QweensOnlineDeli/notice.php?ERROR',
+                    'SuccessUrl' => 'https://dragoon.co.za/QweensOnlineDeli/notice.php?SUCCESS',
+                    'NotifyUrl' => 'https://dragoon.co.za/QweensOnlineDeli/notice.php?NOTICE',
                     'IsTest' => 'true');
 
 $hashString = strtolower(implode('', $postData) . $privateKey);

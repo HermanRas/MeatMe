@@ -146,7 +146,7 @@ if(isset($_POST['pay'])){
                         <p class="text-dark"> Your order has been created, your Order ID: '.$orderId.'</p>
                         <div class="row">
                             <div class="col-12 col-md-6 p-3 bg-white rounded">
-                                <a class="btn  btn-success w-100" href="https://pay.ozow.com/">
+                                <a class="btn  btn-success w-100" href="payOnline.php?orderID='.$orderId.'&Val='.$totalPrice.'">
                                 Pay Via OZOW Online
                                 </a>
                             </div>
