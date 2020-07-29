@@ -4,18 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6aa6254e38bb3b7726fbe8bb016fb849",
+    "content-hash": "23a61b629127066ab1ba460fb63d569f",
     "packages": [
-        {
-            "name": "brix/crypto",
-            "version": "1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/brix/crypto-js.git",
-                "reference": "master"
-            },
-            "type": "library"
-        },
         {
             "name": "composer/installers",
             "version": "v1.9.0",

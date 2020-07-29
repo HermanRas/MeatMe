@@ -1,19 +1,16 @@
 <?php
-    $host = 'FQDN_SERVER_NAME';
-    $db   = 'DB';
-    $user = 'USER';
-    $pass = 'PASS#';
+    // OWOZ
+    $siteCode = 'TSTSTE0001';
+    $privateKey = '215114531AFF7134A94C88CEEA48E';
+    $apiKey = 'EB5758F2C3B4DF3FF4F2669D5FF5B';
 
-    $dsn = "sqlsrv:Server=$host;Database=$db";
-    $options = [
-        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::SQLSRV_ATTR_ENCODING    => PDO::SQLSRV_ENCODING_UTF8,
-    ];
+    // DB
+    $dsn = "sqlite:"."db/Store.sqlite3";
     try {
-        $pdo = new PDO($dsn, $user, $pass, $options);
+        $pdo = new PDO($dsn);
     } catch (\PDOException $e) {
         throw new \PDOException($e->getMessage(), (int)$e->getCode());
         echo 'DB_CONNECTION ERROR !';
     }
+
 ?>
