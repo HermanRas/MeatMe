@@ -7,7 +7,7 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: productsCount['description'],
+        labels: [1, 5, 3, 5, 3],
         datasets: [{
             data: productsCount['count'],
             //                  blue       Green     lightblue   Yellow     Red

@@ -94,6 +94,8 @@
 - pdf invoice on admin panel
 - pdf on status compete using order query for user
 - pdf invoice email on order complete
+- Centets on pork
+- typo uesr
 
 
 ## Look-At-Implementing
