@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeatMe</title>
+
+    <!-- Chrome/android APP settings -->
+    <meta name="theme-color" content="#797641">
+    <link rel="icon" href="img/icon.jpg" sizes="192x192">
+    <!-- end of Chrome/Android App Settings  -->
+
+    <!-- Bootstrap // you can use hosted CDN here-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- end of bootstrap -->
+
+    <!-- font-awesome 5.10.2 // not needed for theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- end of font-awesome  -->
+
+
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body data-barba="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/icon.jpg" width="30" height="30" class="d-inline-block align-top rounded">
+            MeatMe
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="specials.html">Specials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div style="max-width: 350px;" class="form-inline input-group my-2 my-lg-0 float-right">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PageStart -->
+    <main data-barba="container" data-barba-namespace="home">
+        <div class="container mt-3">
+            <h1 class="bg-secondary rounded p-2">LAMB</h1>
+            <div class="text-center">
+                <img class="img-fluid rounded " src="img/lamb.png" alt="lamb">
+                <p class="small text-danger">Packing: 0 - one big Pack <br>
+                    Packing: 1-9 packed per person </p>
+            </div>
+            <br>
+            <hr>
+            <form action="">
+                <!-- NEK START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/nek.jpg" alt="nek">
+                    <div class="media-body">
+                        <h5 class="mt-0">Nek</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram1" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp1" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart1">
+                                    <label class="form-check-label" for="cart">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- NEK END-->
+
+                <hr>
+
+                <!-- BRISKET START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/brisket.png" alt="flank">
+                    <div class="media-body">
+                        <h5 class="mt-0">Brisket</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram2" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp2" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart2">
+                                    <label class="form-check-label" for="cart2">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BRISKET END-->
+
+                <hr>
+
+                <!-- FLANK START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/flank.jpg" alt="flank">
+                    <div class="media-body">
+                        <h5 class="mt-0">Flank</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram3" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp3" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart3">
+                                    <label class="form-check-label" for="cart3">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FLANK END-->
+
+                <hr>
+
+                <!-- LION START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/Loin.jpg" alt="lion">
+                    <div class="media-body">
+                        <h5 class="mt-0">Lion</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram4" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp4" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart4">
+                                    <label class="form-check-label" for="cart4">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LION END-->
+
+                <hr>
+
+                <!-- PLATE START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/plate.jpg" alt="Plate">
+                    <div class="media-body">
+                        <h5 class="mt-0">Plate</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram5" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp5" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart5">
+                                    <label class="form-check-label" for="cart5">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PLATE END-->
+
+                <hr>
+
+                <!-- RIBS START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/ribs.jpg" alt="Ribs">
+                    <div class="media-body">
+                        <h5 class="mt-0">Ribs</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram6" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp6" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart6">
+                                    <label class="form-check-label" for="cart6">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIBS END-->
+
+                <hr>
+
+                <!-- ROUND START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/round.jpg" alt="round">
+                    <div class="media-body">
+                        <h5 class="mt-0">Round</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram7" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp7" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart7">
+                                    <label class="form-check-label" for="cart7">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROUND END-->
+
+                <hr>
+
+                <!-- SERLOIN START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/serloin.jpg" alt="serloin">
+                    <div class="media-body">
+                        <h5 class="mt-0">Serloin</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram8" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp8" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart8">
+                                    <label class="form-check-label" for="cart8">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERLOIN END-->
+
+                <hr>
+
+                <!-- SHANK START-->
+                <div class="media">
+                    <img class="mr-3 buy-item" src="img/beef/Shank.jpg" alt="Shank">
+                    <div class="media-body">
+                        <h5 class="mt-0">Shank</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Grams</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="gram9" placeholder="1000">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="pp">Per person</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Per Person</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pp9" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cart9">
+                                    <label class="form-check-label" for="cart9">
+                                        Add to Cart
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SHANK END-->
+
+            </form>
+            <br>
+            <hr>
+        </div>
+    </main>
+    <div style="min-height:100px" class="text-center rounded bg-dark">
+        <a class="btn btn-dark"><i class="text-white display-4 fab fa-facebook-square"></i></a>
+        <a class="btn btn-dark"><i class="text-white display-4 fab fa-whatsapp-square"></i></a>
+        <a class="btn btn-dark"><i class="text-white display-4 fab fa-pinterest-square"></i></a>
+        <a class="btn btn-dark"><i class="text-white display-4 fab fa-twitter-square"></i></a>
+        <a class="btn btn-dark"><i class="text-white display-4 fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- END of jQuery -->
+
+    <!-- Start of Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- end of Bootstrap JS -->
+
+    <!-- Page Migration -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
